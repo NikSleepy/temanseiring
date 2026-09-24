@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link rel="icon" type="image/png"
+        href="https://lh3.googleusercontent.com/aida-public/AB6AXuBlDgDF3UZJEuAkJy1We6L7TsBztJKORIPw6U2Z8QHh0C61rZaGR-LYpGNO7sY8qZ5N2BvV2TaCu1p6JVLyR0RCpzgIrP7O799PhCwFsrPchAtmJcEOO8qh5BkLkAxFLSpIw5VRdbDov9jhN7FVFWtYoAjOtd32B2zRwYVcrykF7flE2SdKFzDwk_WYz5FGy30-QHWkpRge8DL0_ealXDgkTS9fVL7gvU6m1zz9IuUSjpcMbg8oI5cy5ygynQe1ptCzVg">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-highest": "#e9e2d5", "on-background": "#1e1b14", "inverse-primary": "#aacfb8", "surface": "#fff8ef", "secondary-fixed": "#ffdad2", "surface-bright": "#fff8ef", "background": "#fff8ef", "on-surface": "#1e1b14", "on-secondary-fixed-variant": "#822714", "surface-container-high": "#eee7da", "primary-container": "#1e3f2e", "on-tertiary-fixed": "#291800", "on-primary-fixed-variant": "#2c4d3c", "primary": "#062919", "inverse-surface": "#333028", "on-secondary-fixed": "#3d0600", "outline": "#727973", "on-tertiary-container": "#dd9202", "on-primary-container": "#87aa94", "on-primary": "#ffffff", "on-secondary": "#ffffff", "error-container": "#ffdad6", "tertiary-container": "#503200", "tertiary": "#331f00", "on-surface-variant": "#424843", "tertiary-fixed-dim": "#ffb955", "primary-fixed": "#c6ebd3", "error": "#ba1a1a", "surface-container": "#f4ede0", "on-primary-fixed": "#002112", "on-error": "#ffffff", "surface-container-low": "#faf3e6", "inverse-on-surface": "#f7f0e3", "secondary-container": "#fd8367", "tertiary-fixed": "#ffddb4", "outline-variant": "#c1c8c1", "on-secondary-container": "#721c09", "on-error-container": "#93000a", "primary-fixed-dim": "#aacfb8", "on-tertiary-fixed-variant": "#633f00", "surface-tint": "#446652", "surface-container-lowest": "#ffffff", "surface-variant": "#e9e2d5", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#ffb4a3", "secondary": "#a13e28", "surface-dim": "#e0d9cc" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-md": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin": "3rem", "space-lg": "1.5rem", "gutter": "1.5rem" }, fontFamily: { "display-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-sm": ["Inter"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, fontSize: { "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased">
+    <div data-navbar></div>
+    <main class="w-full pt-20 bg-background min-h-screen">
+        <div class="flex flex-col w-full">
+            <!-- Top Decorative Foliage Subtle Gradient -->
+            <div class="w-full relative overflow-hidden bg-surface-container-low pb-space-xl">
+                <div
+                    class="absolute -top-32 right-[-10%] w-96 h-96 rounded-full bg-primary-fixed-dim/20 blur-3xl pointer-events-none">
+                </div>
+                <div
+                    class="absolute top-10 left-[-8%] w-80 h-80 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none">
+                </div>
+                <!-- 1. Header Halaman -->
+                <div
+                    class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin pt-space-lg lg:pt-space-xl pb-space-md">
+                    <div class="flex flex-col items-center text-center max-w-3xl mx-auto">
+                        <div
+                            class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container text-primary text-label-md font-label-md shadow-sm mb-space-sm">
+                            <span class="material-symbols-outlined text-sm text-secondary">menu_book</span>
+                            <span>Cerita, Refleksi &amp; Dampak</span>
+                        </div>
+                        <h1
+                            class="font-display-lg text-display-lg-mobile lg:text-display-lg text-primary tracking-tight leading-tight mb-space-sm">
+                            Jejak Langkah Nyata &amp; Transformasi Sahabat Seiring
+                        </h1>
+                        <p class="font-body-lg text-body-md lg:text-body-lg text-on-surface-variant max-w-2xl">
+                            Kumpulan kisah tentang menemukan keberanian, menumbuhkan suara diri, dan merajut
+                            persahabatan hangat yang perlahan mengubah arah hidup.
+                        </p>
+                    </div>
+                    <!-- 2. Featured Story / Cerita Utama (Editorial Split Bento) -->
+                    <div
+                        class="mt-space-lg lg:mt-space-xl bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0">
+                        <!-- Visual Story Column -->
+                        <div class="lg:col-span-7 relative min-h-[340px] lg:min-h-[460px] overflow-hidden group">
+                            <img alt="Rania Putri tersenyum memegang mikrofon saat berbagi cerita di hadapan teman-teman komunitas Teman Seiring dalam ruangan berdekorasi tanaman asri"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                                src="https://lh3.googleusercontent.com/aida/AEtjO1X2u12k3wK8Z7rV_WmK2mXLeZC5p90pv5tlbdyEy9ElJAkpWgICHpI8tR992hSzpdmQTXR7ghyRcXHjOszkxhaGLzevJFO-vY3JS-gE-M_U3g1y75wSyK_SCGX-lCFFivUOH-t9BCyUGos7YOIGqSwB6Wb_mT9JCwGknifn2ovqyFvNqWCrJyqVacv-O2LBe6tKHfnvaBktLCtLq0gg8cLvAlZxWraABrQrvGxnTsjy5Q-WnVuRH-HuOTM" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent lg:hidden">
+                            </div>
+                            <div class="absolute top-space-md left-space-md flex items-center gap-space-xs">
+                                <span
+                                    class="px-space-sm py-1 rounded-full bg-secondary text-on-secondary text-label-sm font-label-sm shadow-md">
+                                    Kisah Pilihan Bulan Ini
+                                </span>
+                                <span
+                                    class="px-space-sm py-1 rounded-full bg-surface/90 text-primary text-label-sm font-label-sm backdrop-blur-md">
+                                    4 Menit Baca
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Narrative Column -->
+                        <div
+                            class="lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col justify-between bg-surface-container-lowest">
+                            <div class="flex flex-col">
+                                <div
+                                    class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm mb-space-xs">
+                                    <span class="material-symbols-outlined text-sm">spa</span>
+                                    <span>TRANSFORMASI DIRI</span>
+                                    <span class="text-outline-variant">•</span>
+                                    <span class="text-on-surface-variant">Juni 2024</span>
+                                </div>
+                                <h2
+                                    class="font-headline-md text-headline-sm lg:text-headline-md text-primary leading-snug tracking-tight mb-space-sm">
+                                    “Dari Takut Bersuara di Rapat Kampus, Kini Berani Menjadi Juru Bicara Gerakan
+                                    Sosial”
+                                </h2>
+                                <p
+                                    class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+                                    Dulu, debar jantung Rania selalu berpacu kencang tiap kali harus mengangkat tangan
+                                    dalam forum. Lewat ruang latihan yang aman tanpa penghakiman di Teman Seiring, ia
+                                    tidak hanya menemukan teknik vokal—melainkan menemukan kembali keyakinan bahwa
+                                    gagasannya layak didengarkan dunia.
+                                </p>
+                                <!-- Pull quote accent -->
+                                <div class="bg-surface-container-low p-space-md rounded-lg mb-space-md">
+                                    <p class="font-body-sm text-body-sm italic text-on-surface leading-relaxed">
+                                        “Teman Seiring bukan tempat di mana kamu dituntut langsung sempurna, tapi tanah
+                                        subur tempat bibit keraguanmu disiram sampai menjadi pohon keberanian.”
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Author Info & Action -->
+                            <div class="flex items-center justify-between pt-space-sm">
+                                <div class="flex items-center gap-space-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-title-md text-title-md">
+                                        RP
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-lg text-label-lg text-on-surface">Rania Putri</span>
+                                        <span class="font-label-sm text-label-sm text-on-surface-variant">Mahasiswi
+                                            &amp; Alumni Batch 3</span>
+                                    </div>
+                                </div>
+                                <button
+                                    class="inline-flex items-center gap-space-xs text-secondary hover:text-on-secondary-container font-label-lg text-label-lg group"
+                                    type="button">
+                                    <span>Baca Kisah</span>
+                                    <span
+                                        class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3. Filter Kategori Cerita -->
+            <section class="w-full bg-surface py-space-lg">
+                <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+                    <div class="flex items-center justify-between flex-wrap gap-space-sm pb-space-sm">
+                        <div class="flex items-center gap-space-xs">
+                            <span class="material-symbols-outlined text-primary text-xl">filter_list</span>
+                            <span class="font-label-lg text-label-lg text-primary">Jelajahi Topik Tulisan</span>
+                        </div>
+                        <div class="text-label-sm font-label-sm text-on-surface-variant">
+                            Menampilkan 12 Cerita Inspiratif
+                        </div>
+                    </div>
+                    <!-- Filter Buttons Pill Carousel -->
+                    <div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs" id="categoryFilters">
+                        <button
+                            class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md shrink-0 shadow-sm transition-all"
+                            data-category="all">
+                            Semua Kisah
+                        </button>
+                        <button
+                            class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md shrink-0 transition-all"
+                            data-category="transformasi">
+                            Transformasi Diri
+                        </button>
+                        <button
+                            class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md shrink-0 transition-all"
+                            data-category="public-speaking">
+                            Kisah Public Speaking
+                        </button>
+                        <button
+                            class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md shrink-0 transition-all"
+                            data-category="aksi-sosial">
+                            Aksi Sosial
+                        </button>
+                        <button
+                            class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md shrink-0 transition-all"
+                            data-category="fasilitator">
+                            Catatan Fasilitator
+                        </button>
+                        <button
+                            class="px-space-md py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md shrink-0 transition-all"
+                            data-category="persahabatan">
+                            Persahabatan &amp; Komunitas
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- 4. Grid Artikel & Kisah Anggota -->
+            <section class="w-full bg-surface py-space-xl">
+                <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+                        <!-- Cerita 1: Dimas -->
+                        <article
+                            class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+                            <div class="relative h-56 w-full overflow-hidden">
+                                <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                    data-alt="Seorang pemuda Indonesia berkacamata duduk di kafe dengan buku catatan dan cangkir kopi hangat, tersenyum rileks dengan latar belakang tanaman hijau dalam ruangan yang teduh dan hangat bergaya aesthetic"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcopRh4qYgOPlxV1paXciAMqyvZOWD5JJMhps_aON4o6nDprv4qBH5i8JBtsuRh5lkWb-8siQVKEHZtFM94g431t3F4nH8shVVEsF-a-0vm61XFEaJdwM7g3xokiJMjKDjyOfpkNVlQ_Ioyxo4WOXjvVEFwTcAB1NNk9tAeJkZWCtmAgJVswMoUTJjen_uogBMEgK3f1KJu17NWzq_YrM17Eea_Du_dtvoMA5yj4WaLUakDukNoAZU" />
+                                <span
+                                    class="absolute bottom-3 left-3 px-space-sm py-0.5 rounded-full bg-surface/90 text-primary font-label-sm text-label-sm backdrop-blur-md">
+                                    Persahabatan
+                                </span>
+                            </div>
+                            <div class="p-space-lg flex flex-col flex-1 justify-between">
+                                <div>
+                                    <div
+                                        class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mb-space-xs">
+                                        <span>18 Mei 2024</span>
+                                        <span>•</span>
+                                        <span>5 Menit Baca</span>
+                                    </div>
+                                    <h3
+                                        class="font-title-md text-title-md text-primary leading-snug mb-space-xs hover:text-secondary transition-colors cursor-pointer">
+                                        Dimas: Menemukan Rumah Kedua Saat Merantau dan Kehilangan Arah di Ibu Kota
+                                    </h3>
+                                    <p
+                                        class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+                                        Sendirian di kota megapolitan membuat rutinitas Dimas terasa hampa. Di lingkaran
+                                        mingguan Teman Seiring, secangkir teh dan saling mendengarkan tanpa interupsi
+                                        perlahan memulihkan rasa percayanya pada masa depan.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-space-sm pt-space-md mt-space-sm">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed text-label-sm font-label-sm">
+                                        DA
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-sm text-label-sm text-on-surface font-bold">Dimas
+                                            Anggoro</span>
+                                        <span class="font-label-sm text-label-sm text-on-surface-variant">Relawan Desain
+                                            Grafis</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Cerita 2: Sarah -->
+                        <article
+                            class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+                            <div class="relative h-56 w-full overflow-hidden">
+                                <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                    data-alt="Sekelompok pemuda pemudi ceria mengenakan pakaian kasual duduk melingkar di atas rumput hijau bawah naungan pohon pinus teduh saat workshop leadership di alam bebas, suasana santai dan inspiratif"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQQdMOqkq78vtvoH_hX8IXBk0V-Bjc4mJJQrqCGBrzNrIgMo1F0R0vZtLaaQjhatk-7ZhrkSlFdSBQOFhhCs_fvuRC0waJtJPK80dlYOO8-0MFGmWdeEOV6JfdBE5SbnUp-YJx1xOilaDEVXabhrNXWADVXL0PcRAXyArJuZH491GJjcA8yklzTTTiiwq_NP2Mp08B1TZ7zuRBcygScSt-x0f1E7_GttDn9fMfsWzb7DQ8Qxc2qKSv" />
+                                <span
+                                    class="absolute bottom-3 left-3 px-space-sm py-0.5 rounded-full bg-surface/90 text-primary font-label-sm text-label-sm backdrop-blur-md">
+                                    Transformasi Diri
+                                </span>
+                            </div>
+                            <div class="p-space-lg flex flex-col flex-1 justify-between">
+                                <div>
+                                    <div
+                                        class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mb-space-xs">
+                                        <span>02 Mei 2024</span>
+                                        <span>•</span>
+                                        <span>4 Menit Baca</span>
+                                    </div>
+                                    <h3
+                                        class="font-title-md text-title-md text-primary leading-snug mb-space-xs hover:text-secondary transition-colors cursor-pointer">
+                                        Sarah: Belajar Mengambil Keputusan Sulit Lewat Leadership Camp di Alam Terbuka
+                                    </h3>
+                                    <p
+                                        class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+                                        Terkadang, keberanian memimpin bukan soal memberi perintah lantang, melainkan
+                                        kesediaan mendengar suara hati terdalam dan merangkul kerentanan di hadapan tim.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-space-sm pt-space-md mt-space-sm">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed text-label-sm font-label-sm">
+                                        SW
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-sm text-label-sm text-on-surface font-bold">Sarah
+                                            Widiastuti</span>
+                                        <span class="font-label-sm text-label-sm text-on-surface-variant">Koordinator
+                                            Komunikasi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Cerita 3: Aksi Sebar Literasi -->
+                        <article
+                            class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+                            <div class="relative h-56 w-full overflow-hidden">
+                                <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                    data-alt="Anak-anak tersenyum gembira bersama relawan muda yang sedang membacakan buku dongeng bergambar di perpustakaan sudut komunitas terbuka bernuansa hangat dan penuh keceriaan"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn6rcNtzs96hrfY7VY3gx3WGoGADsP8oJW2J-txewB49COHLWaECx6MJaJK3Iea7cQk1G-hNX1yDNPhfbnO6SSYLNiCZsEsrDt69eICKwivLLXH3kNp5QTrRX2ZdXjl0GQ60qU_25BWGvMebXEfwVaOd7_qL6d5MlScc0igzKT18jIRRHmGqm7-hwfhCgMmzfUeJe9fFMBt5REVXo0zezY9YZq02YJjg-Cs-41M7HHpRbuzHxwZUdC" />
+                                <span
+                                    class="absolute bottom-3 left-3 px-space-sm py-0.5 rounded-full bg-surface/90 text-primary font-label-sm text-label-sm backdrop-blur-md">
+                                    Aksi Sosial
+                                </span>
+                            </div>
+                            <div class="p-space-lg flex flex-col flex-1 justify-between">
+                                <div>
+                                    <div
+                                        class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mb-space-xs">
+                                        <span>21 April 2024</span>
+                                        <span>•</span>
+                                        <span>6 Menit Baca</span>
+                                    </div>
+                                    <h3
+                                        class="font-title-md text-title-md text-primary leading-snug mb-space-xs hover:text-secondary transition-colors cursor-pointer">
+                                        Membawa Senyum ke Tepi Kali: Cerita Relawan Project Aksi Sebar Literasi
+                                    </h3>
+                                    <p
+                                        class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+                                        Kisah 20 relawan muda Teman Seiring yang mengumpulkan 400 buku anak dan
+                                        mendirikan pojok baca terapung mandiri bersama warga bantaran kali Ciliwung.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-space-sm pt-space-md mt-space-sm">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed text-label-sm font-label-sm">
+                                        TS
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-sm text-label-sm text-on-surface font-bold">Tim Lapangan
+                                            Seiring</span>
+                                        <span class="font-label-sm text-label-sm text-on-surface-variant">Gerakan
+                                            Kolaborasi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Cerita 4: Third Space Essai -->
+                        <article
+                            class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+                            <div class="relative h-56 w-full overflow-hidden">
+                                <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                    data-alt="Suasana interior kafe taman dengan pencahayaan hangat sore hari, pot-pot monstera yang asri, dan meja kayu bundar tempat sahabat bertukar pikiran dengan laptop dan kopi"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuRDGbFPY9oZFyh8GAlpUKKyXbzbD7ZDYSiGqqMhexyQOgsdx5BbZHqlgxtLsk9fscowzQZmUB48Pu7rSEhnUZFwxXCXO76Sfaj1hEp0dZRurQGFeZedivskSzjlqrGjPRoNOPO7SHYo5YKJG5c_es7opifSolpFHrSf8tqJXbJciHLlz5x41JxitsFemqY5BBgmymfm734zEb9M1DnAwvmlP5hpq8wtnrSK3F5FYeOi6GCIE6lBts" />
+                                <span
+                                    class="absolute bottom-3 left-3 px-space-sm py-0.5 rounded-full bg-surface/90 text-primary font-label-sm text-label-sm backdrop-blur-md">
+                                    Refleksi Budaya
+                                </span>
+                            </div>
+                            <div class="p-space-lg flex flex-col flex-1 justify-between">
+                                <div>
+                                    <div
+                                        class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mb-space-xs">
+                                        <span>12 April 2024</span>
+                                        <span>•</span>
+                                        <span>3 Menit Baca</span>
+                                    </div>
+                                    <h3
+                                        class="font-title-md text-title-md text-primary leading-snug mb-space-xs hover:text-secondary transition-colors cursor-pointer">
+                                        Mengapa Anak Muda Sekarang Sangat Membutuhkan Third Space yang Hangat?
+                                    </h3>
+                                    <p
+                                        class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+                                        Di antara tekanan kampus, target karir awal, dan kegaduhan linimasa media
+                                        sosial, kita merindukan ruang fisik di mana kita bisa hadir sepenuhnya sebagai
+                                        manusia utuh.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-space-sm pt-space-md mt-space-sm">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary text-label-sm font-label-sm">
+                                        FN
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-sm text-label-sm text-on-surface font-bold">Fajar
+                                            Nugraha</span>
+                                        <span class="font-label-sm text-label-sm text-on-surface-variant">Peneliti
+                                            Budaya Muda</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Cerita 5: Catatan Fasilitator -->
+                        <article
+                            class="flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow duration-300">
+                            <div class="relative h-56 w-full overflow-hidden">
+                                <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                    data-alt="Fasilitator perempuan muda ramah sedang membimbing peserta workshop dalam diskusi kelompok kecil, saling menatap dengan penuh perhatian dan kehangatan empati"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5Z4RUs0hz7Flrw1C5FqnPV3FLFoo6sxxikmQAXryIm434ywE_cSFP-ZbGetQ7oMA9k0ox_V5ITOh7ZhmNqrVHsFzpQLBnGZHvTTKyuNAeQEpLtMAcdJl-nA6ZHqWPn1aTvcgQSSTODrzfHera6faM6OPZdgTvmsYGxY4Hy7QKaX0P4Aswoxo1JRWyG6I5sOCMd1PvymYOqPBCDEr5J0JUcu7UdyZ9Lsl0_Z92pXlFvMpDWwCUD_Gz" />
+                                <span
+                                    class="absolute bottom-3 left-3 px-space-sm py-0.5 rounded-full bg-surface/90 text-primary font-label-sm text-label-sm backdrop-blur-md">
+                                    Catatan Fasilitator
+                                </span>
+                            </div>
+                            <div class="p-space-lg flex flex-col flex-1 justify-between">
+                                <div>
+                                    <div
+                                        class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mb-space-xs">
+                                        <span>28 Maret 2024</span>
+                                        <span>•</span>
+                                        <span>5 Menit Baca</span>
+                                    </div>
+                                    <h3
+                                        class="font-title-md text-title-md text-primary leading-snug mb-space-xs hover:text-secondary transition-colors cursor-pointer">
+                                        Saat Peserta Paling Pendiam Membuka Suaranya Pertama Kali di Panggung Mini
+                                    </h3>
+                                    <p
+                                        class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3 leading-relaxed">
+                                        Tiga menit yang mengubah segalanya. Kisah tentang bagaimana keheningan yang
+                                        dihargai mampu melahirkan keberanian berbicara yang paling jujur dan
+                                        menggetarkan.
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-space-sm pt-space-md mt-space-sm">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary text-label-sm font-label-sm">
+                                        AN
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <span class="font-label-sm text-label-sm text-on-surface font-bold">Anisa
+                                            Nurdin</span>
+                                        <span class="font-label-sm text-label-sm text-on-surface-variant">Lead Mentor
+                                            Public Speaking</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Dynamic Milestone / Mini Impact Stat Card -->
+                        <div
+                            class="bg-primary text-on-primary rounded-xl p-space-lg flex flex-col justify-between shadow-sm relative overflow-hidden">
+                            <div
+                                class="absolute -right-6 -bottom-6 w-36 h-36 rounded-full bg-primary-container opacity-60">
+                            </div>
+                            <div>
+                                <div
+                                    class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed mb-space-md">
+                                    <span class="material-symbols-outlined text-xl">auto_stories</span>
+                                </div>
+                                <span
+                                    class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Arsip
+                                    Dampak Komunitas</span>
+                                <div class="font-display-lg text-display-lg text-primary-fixed mt-space-xs">480+</div>
+                                <p class="font-headline-sm text-headline-sm text-surface-bright mt-1">
+                                    Refleksi tertulis lahir dari 12 Angkatan.
+                                </p>
+                                <p class="font-body-sm text-body-sm text-primary-fixed-dim mt-space-sm leading-relaxed">
+                                    Setiap kisah membuktikan bahwa pertumbuhan sejati terjadi saat kita berani berjalan
+                                    bersama tanpa takut gagal.
+                                </p>
+                            </div>
+                            <div class="pt-space-md">
+                                <a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary-fixed-dim hover:text-secondary-fixed transition-colors"
+                                    href="#kirim-cerita">
+                                    <span>Tuliskan Ceritamu Sendiri</span>
+                                    <span class="material-symbols-outlined text-base">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pagination / Load More Button -->
+                    <div class="flex justify-center mt-space-xl">
+                        <button
+                            class="inline-flex items-center gap-space-xs px-space-xl py-space-sm rounded-full bg-surface-container-high text-primary hover:bg-surface-container-highest font-label-lg text-label-lg transition-all shadow-sm active:scale-95"
+                            type="button">
+                            <span class="material-symbols-outlined text-base">expand_more</span>
+                            <span>Muat Cerita Sebelumnya</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- 5. Galeri Foto Momen Bersama (Scrapbook / Communal Memories) -->
+            <section class="w-full bg-surface-container-low py-space-xl overflow-hidden relative">
+                <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+                    <!-- Section header -->
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-md">
+                        <div>
+                            <div
+                                class="inline-flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider mb-space-xs">
+                                <span class="material-symbols-outlined text-sm">photo_library</span>
+                                <span>Galeri Momen Otentik</span>
+                            </div>
+                            <h2
+                                class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary tracking-tight">
+                                Tawa, Kopi, &amp; Pelukan Hangat yang Menguatkan
+                            </h2>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                            Potret terekam dari pertemuan mingguan, temu wicara, dan sesi berbagi cerita santai sahabat
+                            Seiring.
+                        </p>
+                    </div>
+                    <!-- Bento Visual Strip -->
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+                        <!-- Main Large Photo (IMAGE_5) -->
+                        <div
+                            class="md:col-span-8 h-80 md:h-[440px] rounded-xl overflow-hidden shadow-sm relative group">
+                            <img alt="Sekelompok sahabat muda Indonesia berkumpul akrab tertawa bersama di meja kayu kedai kopi berhias tanaman hijau asri dengan cangkir kopi dan suasana hangat penuh rasa kebersamaan"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                src="https://lh3.googleusercontent.com/aida/AEtjO1WCaOwqCEHjYkyZ21m4i1I34vaZSmBi7gMGmCMjng2ZeC-VNsHTm1xk75avSlWh14HnNILHhFLTSEj6agXmY6P7OWBgg4Qq4Kn_TnopmTnC7_hiyXk_7faRENm6F_iDekBf9JSDKDJDWl6NgTMhkEgD8ufBKob8JyXd1xu6NZcVUm64eQYWIbnIjRpzbpLtzCZHCRnCPckxacFceUwnknbaZc2ET3qEHNhVm78GsxgZceID1Pi42iMssIk" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-space-lg">
+                                <span class="text-surface-bright font-headline-sm text-headline-sm">Sesi Temu Kopi &amp;
+                                    Bercerita</span>
+                                <span class="text-primary-fixed-dim font-body-sm text-body-sm">The Botanic Greenhouse
+                                    Café, Jakarta Selatan</span>
+                            </div>
+                        </div>
+                        <!-- Stacked 2 Side Photos -->
+                        <div class="md:col-span-4 flex flex-col gap-space-md">
+                            <div class="h-48 md:h-[210px] rounded-xl overflow-hidden shadow-sm relative group">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    data-alt="Dua peserta perempuan muda sedang berpelukan hangat dengan wajah bahagia penuh haru saat penutupan sesi kelas public speaking Teman Seiring"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTW9d8dpCBbcw0Unb02MPWb2aN9mflcNfplHOExdOBTWoF9k6q7_DTPfM2LxNSQHvu-A-dVb2dg1yain0acnMdu1Z2NIZ05VOH0VWewEGZXclSMMmMf6eU2skr1RaUmN8zOLl7L03gqUHqznC7rQf-WxSg5PybmofjMl9FK1bF5W7U9vIAHmHRj5LQEvL6-xJ_LH2nuhCuD13j1rQTvWHRqJj-QDiQ505s_08jTG2yp5Z4V48HOqaa" />
+                                <div
+                                    class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-primary/70 to-transparent p-space-sm">
+                                    <span class="text-surface-bright font-label-md text-label-md">Dukungan Nyata Sesama
+                                        Anggota</span>
+                                </div>
+                            </div>
+                            <div class="h-48 md:h-[210px] rounded-xl overflow-hidden shadow-sm relative group">
+                                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                    data-alt="Tepuk tangan meriah dari peserta workshop muda di ruangan terang berpencahayaan alami, buku catatan terbuka di meja kayu dan senyum bangga"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5ydAtm7ane6HeOA2_-aZzfcyhQTdwAEu2FC5DU9aaw0WVb72VSlTmG2-Mp_qdt-KS6r_O08A5HJRxonyYzN6hjLX3NocqcEzCC-k04YR20YajKnQAMPaF8KRcPSgKwQ5z8ZiLCHd24LSvISyRJZJhsbrvgcgAZ9wjeA7gP06xNA1fSpORt2b6HHyJJfo4nJDeLGKP14WfwRN-45KjnfklIwwwenGOALwThv7Cm38TPDDsoi1wvCXF" />
+                                <div
+                                    class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-primary/70 to-transparent p-space-sm">
+                                    <span class="text-surface-bright font-label-md text-label-md">Apresiasi Tiap Langkah
+                                        Kecil</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 6. Suara Anggota (Quotes Grid) -->
+            <section class="w-full bg-surface py-space-xl">
+                <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+                    <div class="text-center max-w-2xl mx-auto mb-space-xl">
+                        <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Gema Suara
+                            Mereka</span>
+                        <h2
+                            class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-primary mt-space-xs">
+                            Apa Arti Teman Seiring Bagi Hidup Mereka?
+                        </h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+                        <!-- Quote 1 -->
+                        <div
+                            class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between relative shadow-sm hover:shadow-md transition-shadow">
+                            <span
+                                class="material-symbols-outlined text-4xl text-primary-fixed-dim select-none mb-space-sm">format_quote</span>
+                            <p class="font-body-md text-body-md text-on-surface leading-relaxed mb-space-md italic">
+                                “Dulu saya selalu merasa harus berpura-pura pintar dan ekstrovert agar diterima. Di
+                                Teman Seiring, saya baru paham bahwa keheningan dan keaslian diri adalah kekuatan
+                                besar.”
+                            </p>
+                            <div class="flex items-center gap-space-sm">
+                                <div
+                                    class="w-11 h-11 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center font-title-md">
+                                    BM
+                                </div>
+                                <div>
+                                    <div class="font-label-lg text-label-lg text-primary font-bold">Bagas Maulana</div>
+                                    <div class="font-label-sm text-label-sm text-on-surface-variant">Peserta Kelas
+                                        Komunikasi Batch 2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div
+                            class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between relative shadow-sm hover:shadow-md transition-shadow">
+                            <span
+                                class="material-symbols-outlined text-4xl text-secondary-fixed select-none mb-space-sm">format_quote</span>
+                            <p class="font-body-md text-body-md text-on-surface leading-relaxed mb-space-md italic">
+                                “Kesehatan mentalku membaik sejak punya lingkaran yang tulus merayakan kemajuan kecil
+                                tanpa membanding-bandingkan pencapaian materi.”
+                            </p>
+                            <div class="flex items-center gap-space-sm">
+                                <div
+                                    class="w-11 h-11 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-title-md">
+                                    KN
+                                </div>
+                                <div>
+                                    <div class="font-label-lg text-label-lg text-primary font-bold">Kania Nareswari
+                                    </div>
+                                    <div class="font-label-sm text-label-sm text-on-surface-variant">Anggota Circle
+                                        Refleksi Mingguan</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div
+                            class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between relative shadow-sm hover:shadow-md transition-shadow">
+                            <span
+                                class="material-symbols-outlined text-4xl text-primary-fixed-dim select-none mb-space-sm">format_quote</span>
+                            <p class="font-body-md text-body-md text-on-surface leading-relaxed mb-space-md italic">
+                                “Tempat ini membuktikan bahwa anak muda tidak apatis. Ketika diberi ruang yang hangat
+                                dan dipercaya, kita mampu melahirkan inisiatif sosial yang luar biasa.”
+                            </p>
+                            <div class="flex items-center gap-space-sm">
+                                <div
+                                    class="w-11 h-11 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-md">
+                                    IR
+                                </div>
+                                <div>
+                                    <div class="font-label-lg text-label-lg text-primary font-bold">Ilham Rizky</div>
+                                    <div class="font-label-sm text-label-sm text-on-surface-variant">Inisiator Proyek
+                                        Sebar Literasi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 7. Ajak Kirimkan Ceritamu (Interactive Submission Callout) -->
+            <section class="w-full bg-surface-container py-space-xl relative overflow-hidden" id="kirim-cerita">
+                <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
+                    <div
+                        class="bg-primary-container text-on-primary rounded-xl p-space-lg lg:p-space-xl shadow-xl relative overflow-hidden">
+                        <!-- Botanical Backdrop Shapes -->
+                        <div
+                            class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-primary/40 blur-2xl pointer-events-none">
+                        </div>
+                        <div
+                            class="absolute left-1/3 -top-20 w-60 h-60 rounded-full bg-secondary/15 blur-2xl pointer-events-none">
+                        </div>
+                        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+                            <div class="lg:col-span-7 flex flex-col gap-space-sm">
+                                <div
+                                    class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-primary text-primary-fixed font-label-sm text-label-sm w-fit">
+                                    <span class="material-symbols-outlined text-sm">edit_note</span>
+                                    <span>Ruang Kontributor Sahabat</span>
+                                </div>
+                                <h2
+                                    class="font-display-lg text-headline-lg-mobile lg:text-display-lg text-surface-bright leading-tight">
+                                    Punya Cerita Berkesan Saat Bertumbuh di Teman Seiring?
+                                </h2>
+                                <p class="font-body-md text-body-md text-primary-fixed-dim max-w-xl leading-relaxed">
+                                    Cerita sederhanamu bisa jadi lentera penyemangat bagi teman lain yang sedang
+                                    berjuang melawan rasa ragu. Tuliskan refleksi, pengalaman, atau pelajaran berharga
+                                    yang kamu dapatkan.
+                                </p>
+                                <div
+                                    class="flex items-center gap-space-md pt-space-xs text-primary-fixed text-label-sm font-label-sm">
+                                    <div class="flex items-center gap-space-xs">
+                                        <span
+                                            class="material-symbols-outlined text-base text-secondary-fixed">check_circle</span>
+                                        <span>Dibantu kurasi oleh editor</span>
+                                    </div>
+                                    <div class="flex items-center gap-space-xs">
+                                        <span
+                                            class="material-symbols-outlined text-base text-secondary-fixed">check_circle</span>
+                                        <span>Mendapat merchandise komunitas</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Form Card -->
+                            <div
+                                class="lg:col-span-5 bg-surface-container-lowest text-on-surface p-space-lg rounded-xl shadow-lg">
+                                <h3 class="font-title-md text-title-md text-primary mb-space-xs">Kirimkan Draf Tulisanmu
+                                </h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+                                    Isi formulir singkat berikut dan tim redaksi Teman Seiring akan menghubungimu.
+                                </p>
+                                <form class="flex flex-col gap-space-sm" id="storySubmissionForm"
+                                    onsubmit="event.preventDefault(); document.getElementById('submissionSuccess').classList.remove('hidden'); this.reset();">
+                                    <div>
+                                        <label class="block font-label-sm text-label-sm text-primary mb-1">Nama Lengkap
+                                            &amp; Panggilan</label>
+                                        <input
+                                            class="w-full bg-surface-container-low text-on-surface px-space-md py-space-xs rounded-lg font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all"
+                                            placeholder="Contoh: Rania Putri (Rania)" required="" type="text" />
+                                    </div>
+                                    <div>
+                                        <label class="block font-label-sm text-label-sm text-primary mb-1">Email Aktif /
+                                            WhatsApp</label>
+                                        <input
+                                            class="w-full bg-surface-container-low text-on-surface px-space-md py-space-xs rounded-lg font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all"
+                                            placeholder="nama@email.com atau 0812xxxx" required="" type="text" />
+                                    </div>
+                                    <div>
+                                        <label class="block font-label-sm text-label-sm text-primary mb-1">Topik atau
+                                            Judul Rencana Kisahmu</label>
+                                        <input
+                                            class="w-full bg-surface-container-low text-on-surface px-space-md py-space-xs rounded-lg font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all"
+                                            placeholder="Misal: Caraku Berdamai dengan Overthinking" required=""
+                                            type="text" />
+                                    </div>
+                                    <div>
+                                        <label class="block font-label-sm text-label-sm text-primary mb-1">Ringkasan
+                                            Singkat Cerita (1-2 Paragraf)</label>
+                                        <textarea
+                                            class="w-full bg-surface-container-low text-on-surface px-space-md py-space-xs rounded-lg font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all resize-none"
+                                            placeholder="Ceritakan intisari proses yang kamu lalui bersama teman-teman..."
+                                            required="" rows="3"></textarea>
+                                    </div>
+                                    <div class="hidden p-space-sm bg-primary-fixed text-on-primary-fixed rounded-lg font-label-sm text-label-sm text-center"
+                                        id="submissionSuccess">
+                                        Terima kasih! Ceritamu telah kami terima dan akan dibaca dengan hangat oleh tim
+                                        kami.
+                                    </div>
+                                    <button
+                                        class="w-full mt-space-xs font-label-lg text-label-lg bg-secondary text-on-secondary py-space-sm rounded-lg hover:bg-secondary-container hover:text-on-secondary-container active:scale-[0.98] transition-all shadow-md flex items-center justify-center gap-space-xs"
+                                        type="submit">
+                                        <span>Bagikan Ceritamu</span>
+                                        <span class="material-symbols-outlined text-base">send</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Interactive Category Filter Micro-script -->
+            <script>
+                (function () {
+                    const filterButtons = document.querySelectorAll('#categoryFilters button');
+                    filterButtons.forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            filterButtons.forEach(b => {
+                                b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+                                b.classList.add('bg-surface-container', 'text-on-surface');
+                            });
+                            btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+                            btn.classList.remove('bg-surface-container', 'text-on-surface');
+                        });
+                    });
+                })();
+            </script>
+        </div>
+    </main>
+    <footer class="w-full bg-primary text-surface-container-lowest">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-xl">
+                <div class="lg:col-span-4 flex flex-col gap-space-md">
+                    <div class="flex items-center gap-space-sm">
+                        <div
+                            class="w-11 h-11 rounded-full overflow-hidden flex items-center justify-center bg-surface-container-lowest shadow-sm ring-2 ring-primary-fixed-dim/30">
+                            <img alt="Teman Seiring Logo" class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlDgDF3UZJEuAkJy1We6L7TsBztJKORIPw6U2Z8QHh0C61rZaGR-LYpGNO7sY8qZ5N2BvV2TaCu1p6JVLyR0RCpzgIrP7O799PhCwFsrPchAtmJcEOO8qh5BkLkAxFLSpIw5VRdbDov9jhN7FVFWtYoAjOtd32B2zRwYVcrykF7flE2SdKFzDwk_WYz5FGy30-QHWkpRge8DL0_ealXDgkTS9fVL7gvU6m1zz9IuUSjpcMbg8oI5cy5ygynQe1ptCzVg" />
+                        </div>
+                        <div class="flex flex-col"><span
+                                class="font-headline-sm text-headline-sm text-surface-bright tracking-tight leading-tight">Taman
+                                Seiring</span><span class="font-label-sm text-label-sm text-primary-fixed-dim">Bertumbuh
+                                Bersama, Berdampak Nyata</span></div>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-surface-dim leading-relaxed">Ruang aman dan positif bagi
+                        anak muda Indonesia untuk saling belajar, bertumbuh, mengasah kepemimpinan, dan mencipta karya
+                        berdampak nyata.</p>
+                    <div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Instagram"
+                            class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed-dim hover:bg-secondary hover:text-on-secondary transition-colors"
+                            href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a><a
+                            aria-label="TikTok"
+                            class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed-dim hover:bg-secondary hover:text-on-secondary transition-colors"
+                            href="#"><span class="material-symbols-outlined text-lg">play_circle</span></a><a
+                            aria-label="WhatsApp"
+                            class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed-dim hover:bg-secondary hover:text-on-secondary transition-colors"
+                            href="#"><span class="material-symbols-outlined text-lg">chat</span></a><a
+                            aria-label="YouTube"
+                            class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed-dim hover:bg-secondary hover:text-on-secondary transition-colors"
+                            href="#"><span class="material-symbols-outlined text-lg">smart_display</span></a></div>
+                </div>
+                <div class="lg:col-span-2 flex flex-col gap-space-sm"><span
+                        class="font-title-md text-title-md text-surface-bright">Navigasi</span>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-dim">
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="beranda"
+                                href="#">Beranda</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="tentang-kami"
+                                href="#">Tentang Kami</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="program"
+                                href="#">Program</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="kegiatan"
+                                href="#">Kegiatan</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="cerita-kami"
+                                href="#">Cerita Kami</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="kontak"
+                                href="#">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
+                        class="font-title-md text-title-md text-surface-bright">Fokus Komunitas</span>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-dim">
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="program"
+                                href="#">Komunikasi &amp; Public Speaking</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="program"
+                                href="#">Self-Leadership &amp; Mindset</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="kegiatan"
+                                href="#">Temu Kolaborasi &amp; Workshop</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="cerita-kami"
+                                href="#">Inspirasi &amp; Jejak Langkah</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="kontak"
+                                href="#">Kemitraan &amp; Kolaborasi Sosial</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
+                        class="font-title-md text-title-md text-surface-bright">Sapa Teman Seiring</span>
+                    <p class="font-body-sm text-body-sm text-surface-dim">Dapatkan kabar kegiatan komunitas, pendaftaran
+                        kelas, dan inspirasi bulanan langsung ke emailmu.</p>
+                    <form class="flex flex-col gap-space-xs mt-space-xs" onsubmit="return false;">
+                        <div class="flex w-full items-center rounded-xl bg-primary-container px-space-sm py-space-xs">
+                            <span
+                                class="material-symbols-outlined text-primary-fixed-dim mr-space-xs text-lg">mail</span><input
+                                class="w-full bg-transparent font-body-sm text-body-sm text-surface-bright placeholder:text-outline-variant focus:outline-none"
+                                placeholder="Tulis email aktifmu..." type="email" /></div><button
+                            class="w-full font-label-md text-label-md bg-secondary text-on-secondary px-space-md py-space-sm rounded-xl hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center justify-center gap-space-xs"
+                            type="submit"><span class="">Berlangganan Kabar</span><span
+                                class="material-symbols-outlined text-base">arrow_forward</span></button>
+                    </form>
+                </div>
+            </div>
+            <div
+                class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-primary-fixed-dim">
+                <p class="">© 2026 Teman Seiring. Bertumbuh Bersama, Berdampak Nyata.</p>
+                <div class="flex items-center gap-space-md"><a class="hover:text-surface-bright transition-colors"
+                        href="#">Kebijakan Privasi</a><a class="hover:text-surface-bright transition-colors"
+                        href="#">Panduan Komunitas</a><a class="hover:text-surface-bright transition-colors"
+                        data-path="kontak" href="#">Hubungi Kami</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="navbar.js"></script>
+</body>
+
+</html>

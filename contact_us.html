@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link rel="icon" type="image/png"
+        href="https://lh3.googleusercontent.com/aida-public/AB6AXuBlDgDF3UZJEuAkJy1We6L7TsBztJKORIPw6U2Z8QHh0C61rZaGR-LYpGNO7sY8qZ5N2BvV2TaCu1p6JVLyR0RCpzgIrP7O799PhCwFsrPchAtmJcEOO8qh5BkLkAxFLSpIw5VRdbDov9jhN7FVFWtYoAjOtd32B2zRwYVcrykF7flE2SdKFzDwk_WYz5FGy30-QHWkpRge8DL0_ealXDgkTS9fVL7gvU6m1zz9IuUSjpcMbg8oI5cy5ygynQe1ptCzVg">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        @layer base {
+
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overscroll-behavior: none;
+            }
+
+            main>:first-child {
+                margin-top: 0 !important;
+            }
+
+            main>:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-highest": "#e9e2d5", "on-background": "#1e1b14", "inverse-primary": "#aacfb8", "surface": "#fff8ef", "secondary-fixed": "#ffdad2", "surface-bright": "#fff8ef", "background": "#fff8ef", "on-surface": "#1e1b14", "on-secondary-fixed-variant": "#822714", "surface-container-high": "#eee7da", "primary-container": "#1e3f2e", "on-tertiary-fixed": "#291800", "on-primary-fixed-variant": "#2c4d3c", "primary": "#062919", "inverse-surface": "#333028", "on-secondary-fixed": "#3d0600", "outline": "#727973", "on-tertiary-container": "#dd9202", "on-primary-container": "#87aa94", "on-primary": "#ffffff", "on-secondary": "#ffffff", "error-container": "#ffdad6", "tertiary-container": "#503200", "tertiary": "#331f00", "on-surface-variant": "#424843", "tertiary-fixed-dim": "#ffb955", "primary-fixed": "#c6ebd3", "error": "#ba1a1a", "surface-container": "#f4ede0", "on-primary-fixed": "#002112", "on-error": "#ffffff", "surface-container-low": "#faf3e6", "inverse-on-surface": "#f7f0e3", "secondary-container": "#fd8367", "tertiary-fixed": "#ffddb4", "outline-variant": "#c1c8c1", "on-secondary-container": "#721c09", "on-error-container": "#93000a", "primary-fixed-dim": "#aacfb8", "on-tertiary-fixed-variant": "#633f00", "surface-tint": "#446652", "surface-container-lowest": "#ffffff", "surface-variant": "#e9e2d5", "on-tertiary": "#ffffff", "secondary-fixed-dim": "#ffb4a3", "secondary": "#a13e28", "surface-dim": "#e0d9cc" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-md": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "margin": "3rem", "space-lg": "1.5rem", "gutter": "1.5rem" }, fontFamily: { "display-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-sm": ["Inter"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"] }, fontSize: { "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased">
+    <div data-navbar></div>
+    <main class="w-full pt-20 bg-background min-h-screen">
+        <div class="flex flex-col w-full">
+            <!-- Top Botanical Ambience & Section Header -->
+            <section class="relative w-full overflow-hidden px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
+                <div class="max-w-[1280px] mx-auto relative z-10">
+                    <div class="flex flex-col items-start max-w-3xl gap-space-sm">
+                        <div
+                            class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-fixed text-on-primary-fixed shadow-sm">
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+                            <span class="font-label-md text-label-md">Pintu Kami Selalu Terbuka</span>
+                        </div>
+                        <h1 class="font-display-lg text-display-lg text-primary tracking-tight">
+                            Mari Terhubung, Mengobrol Santai, atau Mulai Berkolaborasi
+                        </h1>
+                        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            Baik kamu anak muda yang ingin bergabung, komunitas yang ingin berkolaborasi, maupun
+                            instansi yang ingin bermitra — kami senang mendengar suaramu.
+                        </p>
+                        <!-- Quick highlights / mood ticker -->
+                        <div
+                            class="flex flex-wrap items-center gap-space-sm pt-space-xs text-on-surface-variant font-label-md text-label-md">
+                            <span
+                                class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full">
+                                <span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+                                Respon ramah 1x24 jam
+                            </span>
+                            <span
+                                class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full">
+                                <span class="material-symbols-outlined text-sm text-tertiary">local_cafe</span>
+                                Kopi &amp; ruang diskusi gratis
+                            </span>
+                            <span
+                                class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full">
+                                <span class="material-symbols-outlined text-sm text-primary">diversity_3</span>
+                                1,400+ pemuda telah bergabung
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Organic decorative background glow -->
+                <div
+                    class="absolute -top-24 right-0 w-[460px] h-[460px] rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none -z-0">
+                </div>
+                <div
+                    class="absolute bottom-0 left-1/3 w-[340px] h-[340px] rounded-full bg-secondary-fixed/30 blur-2xl pointer-events-none -z-0">
+                </div>
+            </section>
+            <!-- Main 2-Column Section -->
+            <section class="w-full px-margin-mobile lg:px-margin pb-space-xl">
+                <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+                    <!-- Left Column: Friendly & Interactive Form -->
+                    <div
+                        class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg lg:p-space-xl shadow-sm relative">
+                        <div class="flex items-center justify-between pb-space-md">
+                            <div>
+                                <h2 class="font-headline-md text-headline-md text-primary">Kirimkan Cerita atau
+                                    Pertanyaanmu</h2>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
+                                    Isi form berikut dengan santai. Tim relawan dan pengurus kami akan menyapamu secara
+                                    personal.
+                                </p>
+                            </div>
+                            <div
+                                class="hidden sm:flex w-12 h-12 rounded-full bg-surface-container items-center justify-center text-primary shrink-0">
+                                <span class="material-symbols-outlined text-2xl">eco</span>
+                            </div>
+                        </div>
+                        <form class="flex flex-col gap-space-md" id="contactForm"
+                            onsubmit="event.preventDefault(); showSuccessToast();">
+                            <!-- Field 1: Full Name -->
+                            <div class="flex flex-col gap-space-xs">
+                                <label class="font-label-lg text-label-lg text-primary" for="fullName">Nama Lengkap atau
+                                    Panggilan Hangat</label>
+                                <div class="relative">
+                                    <span
+                                        class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-lg">badge</span>
+                                    <input
+                                        class="w-full pl-11 pr-space-md py-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all font-body-md text-body-md"
+                                        id="fullName" placeholder="Contoh: Rian Pratama" required="" type="text" />
+                                </div>
+                            </div>
+                            <!-- Field 2 & 3: Email & WhatsApp (Grid on sm+) -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+                                <div class="flex flex-col gap-space-xs">
+                                    <label class="font-label-lg text-label-lg text-primary" for="email">Email
+                                        Aktif</label>
+                                    <div class="relative">
+                                        <span
+                                            class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-lg">alternate_email</span>
+                                        <input
+                                            class="w-full pl-11 pr-space-md py-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all font-body-md text-body-md"
+                                            id="email" placeholder="kamu@email.com" required="" type="email" />
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-space-xs">
+                                    <label class="font-label-lg text-label-lg text-primary" for="whatsapp">Nomor
+                                        WhatsApp</label>
+                                    <div class="relative">
+                                        <span
+                                            class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-lg">call</span>
+                                        <input
+                                            class="w-full pl-11 pr-space-md py-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all font-body-md text-body-md"
+                                            id="whatsapp" placeholder="0812-xxxx-xxxx" required="" type="tel" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Field 4: Purpose of Contact (Interactive Pills Selector) -->
+                            <div class="flex flex-col gap-space-xs">
+                                <span class="font-label-lg text-label-lg text-primary">Apa yang Ingin Kamu
+                                    Bicarakan?</span>
+                                <div class="flex flex-wrap gap-space-xs pt-1" id="purposeSelector">
+                                    <button
+                                        class="purpose-pill active font-label-md text-label-md px-space-md py-2 rounded-full transition-all bg-primary-container text-on-primary"
+                                        onclick="selectPurpose(this, 'member')" type="button">
+                                        Ingin Bergabung Anggota
+                                    </button>
+                                    <button
+                                        class="purpose-pill font-label-md text-label-md px-space-md py-2 rounded-full transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high"
+                                        onclick="selectPurpose(this, 'program')" type="button">
+                                        Tanya Program
+                                    </button>
+                                    <button
+                                        class="purpose-pill font-label-md text-label-md px-space-md py-2 rounded-full transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high"
+                                        onclick="selectPurpose(this, 'collab')" type="button">
+                                        Kolaborasi Komunitas
+                                    </button>
+                                    <button
+                                        class="purpose-pill font-label-md text-label-md px-space-md py-2 rounded-full transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high"
+                                        onclick="selectPurpose(this, 'partner')" type="button">
+                                        Undangan / Kemitraan
+                                    </button>
+                                    <button
+                                        class="purpose-pill font-label-md text-label-md px-space-md py-2 rounded-full transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high"
+                                        onclick="selectPurpose(this, 'other')" type="button">
+                                        Lainnya
+                                    </button>
+                                </div>
+                                <input id="selectedPurpose" name="purpose" type="hidden" value="member" />
+                            </div>
+                            <!-- Field 5: Message Textarea -->
+                            <div class="flex flex-col gap-space-xs">
+                                <div class="flex items-center justify-between">
+                                    <label class="font-label-lg text-label-lg text-primary" for="message">Pesan atau
+                                        Ceritamu</label>
+                                    <span class="font-label-sm text-label-sm text-outline">Bebas &amp; tanpa
+                                        tekanan</span>
+                                </div>
+                                <textarea
+                                    class="w-full p-space-md rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all font-body-md text-body-md resize-none"
+                                    id="message"
+                                    placeholder="Ceritakan ketertarikanmu, ide kegiatan, atau pertanyaan apa saja yang ingin diobrolkan..."
+                                    required="" rows="4"></textarea>
+                            </div>
+                            <!-- Submit CTA & Reassurance -->
+                            <div
+                                class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md pt-space-xs">
+                                <button
+                                    class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs font-label-lg text-label-lg bg-secondary text-on-secondary px-space-xl py-3 rounded-full shadow-[0_4px_16px_rgba(161,62,40,0.25)] hover:bg-secondary-container hover:text-on-secondary-container active:scale-[0.98] transition-all"
+                                    type="submit">
+                                    <span>Kirim Pesan Hangatmu</span>
+                                    <span class="material-symbols-outlined text-base">arrow_forward</span>
+                                </button>
+                                <div class="flex items-center gap-space-xs text-on-surface-variant">
+                                    <span class="material-symbols-outlined text-base text-primary">schedule</span>
+                                    <span class="font-body-sm text-body-sm">Dibalas maksimal 1x24 jam kerja.</span>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Dynamic Success Banner (Hidden by default) -->
+                        <div class="hidden mt-space-md p-space-md rounded-xl bg-primary-fixed text-on-primary-fixed flex items-start gap-space-sm"
+                            id="formSuccessToast">
+                            <span class="material-symbols-outlined text-2xl text-primary shrink-0"
+                                style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <div class="flex flex-col">
+                                <span class="font-title-md text-title-md text-primary">Pesanmu Berhasil Diterima!</span>
+                                <p class="font-body-sm text-body-sm text-on-primary-fixed-variant">Terima kasih sudah
+                                    menyapa. Tim kami sedang menyiapkan secangkir kopi hangat sambil membaca pesanmu dan
+                                    akan segera merespons via WhatsApp atau Email.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Direct Info & Community Channels -->
+                    <div class="lg:col-span-5 flex flex-col gap-space-md">
+                        <!-- Quick WhatsApp Card -->
+                        <a class="group flex items-start justify-between p-space-lg rounded-xl bg-surface-container-high hover:bg-surface-container-highest transition-all shadow-sm"
+                            href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+                            <div class="flex items-start gap-space-md">
+                                <div
+                                    class="w-12 h-12 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-2xl">chat</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span
+                                        class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Respon
+                                        Paling Cepat</span>
+                                    <span
+                                        class="font-title-md text-title-md text-primary group-hover:text-secondary transition-colors">Direct
+                                        WhatsApp</span>
+                                    <span class="font-body-md text-body-md text-on-surface font-semibold pt-0.5">+62
+                                        812-3456-7890</span>
+                                    <span class="font-body-sm text-body-sm text-on-surface-variant pt-1">Admin ramah
+                                        siap menyapa: Kak Maya &amp; Mas Danu (09.00 - 20.00 WIB)</span>
+                                </div>
+                            </div>
+                            <span
+                                class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">north_east</span>
+                        </a>
+                        <!-- Official Email Card -->
+                        <div
+                            class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+                            <div class="flex items-center gap-space-sm">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+                                    <span class="material-symbols-outlined text-xl">mail</span>
+                                </div>
+                                <div>
+                                    <span class="font-title-md text-title-md text-primary">Email Resmi Kami</span>
+                                    <p class="font-body-sm text-body-sm text-on-surface-variant">Pilih jalur surat
+                                        sesuai kebutuhanmu</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-space-xs pt-space-xs">
+                                <div
+                                    class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+                                    <span class="font-body-sm text-body-sm text-on-surface">Umum &amp;
+                                        Keanggotaan</span>
+                                    <span
+                                        class="font-label-md text-label-md text-primary font-bold select-all">halo@tamanseiring.org</span>
+                                </div>
+                                <div
+                                    class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+                                    <span class="font-body-sm text-body-sm text-on-surface">Kemitraan &amp; Media</span>
+                                    <span
+                                        class="font-label-md text-label-md text-secondary font-bold select-all">kemitraan@tamanseiring.org</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Community House / Sekretariat Card -->
+                        <div
+                            class="p-space-lg rounded-xl bg-primary text-on-primary shadow-sm flex flex-col gap-space-md">
+                            <div class="flex items-start justify-between">
+                                <div class="flex items-center gap-space-sm">
+                                    <div
+                                        class="w-10 h-10 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center">
+                                        <span class="material-symbols-outlined text-xl">cottage</span>
+                                    </div>
+                                    <div>
+                                        <span
+                                            class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">Sekretariat
+                                            &amp; Rumah Berkumpul</span>
+                                        <h3 class="font-title-md text-title-md text-surface-bright">Rumah Komunitas
+                                            Teman Seiring</h3>
+                                    </div>
+                                </div>
+                                <span
+                                    class="font-label-sm text-label-sm bg-primary-container text-primary-fixed px-2.5 py-1 rounded-full">Buka
+                                    Santai</span>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-surface-dim leading-relaxed">
+                                Jl. Gandaria Tengah No. 18, Kramat Pela, Kebayoran Baru, Jakarta Selatan, 12130.
+                            </p>
+                            <div class="grid grid-cols-2 gap-space-sm pt-space-xs text-surface-bright">
+                                <div class="bg-primary-container/70 p-space-sm rounded-lg">
+                                    <span class="font-label-sm text-label-sm text-primary-fixed-dim block">Selasa –
+                                        Jumat</span>
+                                    <span class="font-label-md text-label-md font-bold">13.00 - 21.00 WIB</span>
+                                </div>
+                                <div class="bg-primary-container/70 p-space-sm rounded-lg">
+                                    <span class="font-label-sm text-label-sm text-primary-fixed-dim block">Sabtu –
+                                        Minggu</span>
+                                    <span class="font-label-md text-label-md font-bold">10.00 - 22.00 WIB</span>
+                                </div>
+                            </div>
+                            <p class="font-body-sm text-body-sm text-primary-fixed-dim italic">
+                                *Senin libur mingguan untuk pemeliharaan ruang baca dan kebun komunitas.
+                            </p>
+                        </div>
+                        <!-- Social Media Ecosystem Card -->
+                        <div
+                            class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+                            <span class="font-title-md text-title-md text-primary">Kanal &amp; Suara Komunitas</span>
+                            <p class="font-body-sm text-body-sm text-on-surface-variant">Ikuti obrolan harian, reels
+                                edukatif, dan podcast inspiratif kami:</p>
+                            <div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+                                <a class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors"
+                                    href="#">
+                                    <span class="material-symbols-outlined text-secondary text-lg">camera_alt</span>
+                                    <span class="font-label-md text-label-md text-on-surface">@tamanseiring</span>
+                                </a>
+                                <a class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors"
+                                    href="#">
+                                    <span class="material-symbols-outlined text-secondary text-lg">play_circle</span>
+                                    <span class="font-label-md text-label-md text-on-surface">TikTok Komunitas</span>
+                                </a>
+                                <a class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors"
+                                    href="#">
+                                    <span class="material-symbols-outlined text-secondary text-lg">podcasts</span>
+                                    <span class="font-label-md text-label-md text-on-surface">Ruang Seiring
+                                        Podcast</span>
+                                </a>
+                                <a class="flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors"
+                                    href="#">
+                                    <span class="material-symbols-outlined text-secondary text-lg">video_library</span>
+                                    <span class="font-label-md text-label-md text-on-surface">YouTube Series</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 3: Collaboration Pathways (3 Cards) -->
+            <section class="w-full bg-surface-container py-space-xl px-margin-mobile lg:px-margin">
+                <div class="max-w-[1280px] mx-auto flex flex-col gap-space-lg">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+                        <div class="max-w-xl">
+                            <span
+                                class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Jalur
+                                Bersinergi</span>
+                            <h2 class="font-headline-lg text-headline-lg text-primary pt-1">Bentuk Kolaborasi yang
+                                Terbuka untuk Kita Rajut</h2>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                            Kami percaya perubahan bermakna selalu lahir dari kerja sama gotong royong yang setara dan
+                            berkelanjutan.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg pt-space-xs">
+                        <!-- Pathway 1: Community to Community -->
+                        <div
+                            class="group bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                            <div class="flex flex-col gap-space-sm">
+                                <div
+                                    class="w-14 h-14 rounded-xl bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+                                    <span class="material-symbols-outlined text-3xl">diversity_1</span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-primary">Kolaborasi Antar Komunitas
+                                </h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                    Joint event, pertukaran fasilitator, cross-sharing audiens, dan kampanye sosial
+                                    gabungan untuk isu kepemudaan, lingkungan, dan literasi.
+                                </p>
+                            </div>
+                            <div
+                                class="pt-space-md mt-space-md bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+                                <span class="font-label-sm text-label-sm text-on-surface-variant">Format: Workshop &amp;
+                                    Festival</span>
+                                <button
+                                    class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-0.5 hover:underline"
+                                    onclick="setFormPurpose('collab')" type="button">
+                                    Pilih Ini <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Pathway 2: Campus & Schools -->
+                        <div
+                            class="group bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                            <div class="flex flex-col gap-space-sm">
+                                <div
+                                    class="w-14 h-14 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary group-hover:scale-105 transition-transform">
+                                    <span class="material-symbols-outlined text-3xl">school</span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-primary">Program Kampus &amp; Sekolah
+                                </h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                    Roadshow workshop public speaking, self-leadership, mental health awareness, serta
+                                    pendampingan inisiasi proyek dampak untuk BEM dan OSIS.
+                                </p>
+                            </div>
+                            <div
+                                class="pt-space-md mt-space-md bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+                                <span class="font-label-sm text-label-sm text-on-surface-variant">Format: Modul
+                                    Interaktif 1-3 Hari</span>
+                                <button
+                                    class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-0.5 hover:underline"
+                                    onclick="setFormPurpose('partner')" type="button">
+                                    Pilih Ini <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Pathway 3: Venue & Sponsorship Partner -->
+                        <div
+                            class="group bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                            <div class="flex flex-col gap-space-sm">
+                                <div
+                                    class="w-14 h-14 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary group-hover:scale-105 transition-transform">
+                                    <span class="material-symbols-outlined text-3xl">storefront</span>
+                                </div>
+                                <h3 class="font-headline-sm text-headline-sm text-primary">Venue &amp; Sponsorship
+                                    Partner</h3>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                                    Dukungan ruang kumpul kreatif, penyediaan beasiswa kelas pemuda rentan, serta
+                                    sponsorship sarana belajar yang berdampak langsung.
+                                </p>
+                            </div>
+                            <div
+                                class="pt-space-md mt-space-md bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between">
+                                <span class="font-label-sm text-label-sm text-on-surface-variant">Format: CSR &amp;
+                                    Ruang Mitra</span>
+                                <button
+                                    class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-0.5 hover:underline"
+                                    onclick="setFormPurpose('partner')" type="button">
+                                    Pilih Ini <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 4: Map & Transit Accessibility Guide -->
+            <section class="w-full px-margin-mobile lg:px-margin py-space-xl">
+                <div class="max-w-[1280px] mx-auto flex flex-col gap-space-lg">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+                        <div>
+                            <span
+                                class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">Akses
+                                Transportasi</span>
+                            <h2 class="font-headline-lg text-headline-lg text-primary pt-1">Mampir ke Rumah Komunitas
+                                Kami</h2>
+                        </div>
+                        <div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+                            <span class="material-symbols-outlined text-primary">directions_walk</span>
+                            Ramah pejalan kaki &amp; transportasi publik
+                        </div>
+                    </div>
+                    <!-- Map Visual Grid Layout -->
+                    <div
+                        class="grid grid-cols-1 lg:grid-cols-12 gap-space-md bg-surface-container-lowest rounded-xl p-space-md shadow-sm overflow-hidden">
+                        <!-- Interactive Map Element with data-location -->
+                        <div
+                            class="lg:col-span-8 min-h-[340px] lg:min-h-[420px] rounded-lg overflow-hidden relative shadow-inner">
+                            <div class="w-full h-full bg-cover bg-center min-h-[340px] lg:min-h-[420px]"
+                                data-location="Jl. Gandaria Tengah No. 18, Kramat Pela, Kebayoran Baru, Jakarta Selatan"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcr_0U1r3EH-jlNrqeDG7rqyTNgJd6PC2QyCxHCbjhQEaNzuDMRYkb0-NZlYFqBdrbz1-3Ne0crFqcqgdaKeSeH4RF6ULyFYT-LMzMXDA7va9nacFgoFHPMN6XDt0f4nz3xHdjXVvhStcPm2SBQj3jTPr6rNIp_fw1vqpDxPfo5EMOjOmnzIScb-y9qWsNncZxucB9tBpa7niHV-rI8BJZpOAL3DNM0ebySTQv0WNssgfyAxQwqchf');">
+                            </div>
+                            <!-- Floating Map Accent Badge -->
+                            <div
+                                class="absolute top-4 left-4 bg-surface/90 backdrop-blur-md px-space-md py-space-xs rounded-full shadow-md flex items-center gap-space-xs text-primary font-label-md text-label-md">
+                                <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+                                Rumah Komunitas Teman Seiring (Gandaria Tengah No. 18)
+                            </div>
+                            <a class="absolute bottom-4 right-4 bg-primary text-on-primary px-space-md py-space-xs rounded-full shadow-md hover:bg-primary-container transition-colors flex items-center gap-space-xs font-label-sm text-label-sm"
+                                href="https://maps.google.com/?q=Gandaria+Tengah+Jakarta+Selatan"
+                                rel="noopener noreferrer" target="_blank">
+                                <span>Buka di Google Maps</span>
+                                <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            </a>
+                        </div>
+                        <!-- Transit Instructions & Community House Etiquette -->
+                        <div class="lg:col-span-4 flex flex-col justify-between p-space-sm lg:p-space-md gap-space-md">
+                            <div class="flex flex-col gap-space-sm">
+                                <h3 class="font-headline-sm text-headline-sm text-primary">Panduan Rute Mudah</h3>
+                                <!-- Transit item 1 -->
+                                <div
+                                    class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+                                    <span class="material-symbols-outlined text-primary text-2xl shrink-0">train</span>
+                                    <div>
+                                        <span class="font-label-md text-label-md text-primary">MRT Jakarta</span>
+                                        <p class="font-body-sm text-body-sm text-on-surface-variant">Turun di <strong
+                                                class="text-on-surface">Stasiun Blok M BCA</strong> atau <strong
+                                                class="text-on-surface">Stasiun ASEAN</strong>. Lanjut 6 menit jalan
+                                            kaki atau 3 menit ojek online.</p>
+                                    </div>
+                                </div>
+                                <!-- Transit item 2 -->
+                                <div
+                                    class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+                                    <span
+                                        class="material-symbols-outlined text-secondary text-2xl shrink-0">directions_bus</span>
+                                    <div>
+                                        <span class="font-label-md text-label-md text-primary">TransJakarta</span>
+                                        <p class="font-body-sm text-body-sm text-on-surface-variant">Turun di <strong
+                                                class="text-on-surface">Halte Kejaksaan Agung</strong> atau Terminal
+                                            Blok M (Koridor 1 &amp; 13).</p>
+                                    </div>
+                                </div>
+                                <!-- Transit item 3 -->
+                                <div
+                                    class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+                                    <span
+                                        class="material-symbols-outlined text-tertiary text-2xl shrink-0">two_wheeler</span>
+                                    <div>
+                                        <span class="font-label-md text-label-md text-primary">Parkir Sepeda &amp;
+                                            Motor</span>
+                                        <p class="font-body-sm text-body-sm text-on-surface-variant">Tersedia area
+                                            parkir sepeda teduh &amp; tumbler refill gratis di teras depan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tips santai berkunjung -->
+                            <div
+                                class="p-space-sm rounded-lg bg-surface-container flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+                                <span
+                                    class="material-symbols-outlined text-secondary text-base">sentiment_satisfied</span>
+                                <span>Tips: Tidak perlu dress code kaku. Kenakan pakaian santai &amp; bawa botol minum
+                                    sendiri ya!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Section 5: FAQs Before Connecting -->
+            <section class="w-full bg-surface-container-low py-space-xl px-margin-mobile lg:px-margin">
+                <div class="max-w-[960px] mx-auto flex flex-col gap-space-lg">
+                    <div class="text-center flex flex-col items-center gap-space-xs">
+                        <span
+                            class="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Tanya
+                            Cepat</span>
+                        <h2 class="font-headline-lg text-headline-lg text-primary">Pertanyaan yang Sering Diajukan
+                            Teman-Teman</h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+                            Mungkin rasa penasaranmu sudah terjawab di bawah ini. Jika belum, jangan sungkan kirimkan
+                            pesan!
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-space-xs" id="faqAccordion">
+                        <!-- FAQ 1 -->
+                        <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all">
+                            <button
+                                class="w-full p-space-md lg:p-space-lg flex items-center justify-between text-left gap-space-sm"
+                                onclick="toggleFaq(this)" type="button">
+                                <span class="font-title-md text-title-md text-primary">Apakah ada biaya untuk bergabung
+                                    menjadi anggota Teman Seiring?</span>
+                                <span
+                                    class="material-symbols-outlined text-primary shrink-0 transition-transform duration-200">expand_more</span>
+                            </button>
+                            <div
+                                class="faq-content hidden px-space-md lg:px-space-lg pb-space-lg font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Sama sekali <strong>tidak ada biaya (100% Gratis)</strong> untuk bergabung menjadi
+                                anggota komunitas dasar. Beberapa workshop spesifik atau retreat intensif mungkin
+                                memiliki urunan biaya logistik bersama, namun kami selalu menyediakan skema beasiswa
+                                penuh bagi teman-teman yang membutuhkan.
+                            </div>
+                        </div>
+                        <!-- FAQ 2 -->
+                        <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all">
+                            <button
+                                class="w-full p-space-md lg:p-space-lg flex items-center justify-between text-left gap-space-sm"
+                                onclick="toggleFaq(this)" type="button">
+                                <span class="font-title-md text-title-md text-primary">Bolehkah saya datang langsung ke
+                                    Rumah Komunitas sendirian tanpa teman?</span>
+                                <span
+                                    class="material-symbols-outlined text-primary shrink-0 transition-transform duration-200">expand_more</span>
+                            </button>
+                            <div
+                                class="faq-content hidden px-space-md lg:px-space-lg pb-space-lg font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Sangat boleh! Lebih dari 70% teman-teman yang pertama kali datang ke Teman Seiring
+                                datang seorang diri. Tim "Kawan Sambut" kami di lokasi akan menyapamu dengan hangat,
+                                membuatkan teh atau kopi, dan mengenalkanmu ke teman-teman lain secara rileks tanpa
+                                paksaan.
+                            </div>
+                        </div>
+                        <!-- FAQ 3 -->
+                        <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all">
+                            <button
+                                class="w-full p-space-md lg:p-space-lg flex items-center justify-between text-left gap-space-sm"
+                                onclick="toggleFaq(this)" type="button">
+                                <span class="font-title-md text-title-md text-primary">Bagaimana mekanisme jika
+                                    organisasi atau brand kami ingin mengajukan proposal kolaborasi?</span>
+                                <span
+                                    class="material-symbols-outlined text-primary shrink-0 transition-transform duration-200">expand_more</span>
+                            </button>
+                            <div
+                                class="faq-content hidden px-space-md lg:px-space-lg pb-space-lg font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Kamu dapat mengisi form di atas dengan memilih opsi <em>'Undangan / Kemitraan'</em> atau
+                                mengirimkan dokumen TOR / proposal langsung via email ke <strong
+                                    class="text-secondary">kemitraan@tamanseiring.org</strong>. Tim kurasi kemitraan
+                                kami akan meninjau keselarasan nilai dan menjadwalkan sesi mengobrol virtual via Google
+                                Meet dalam 2 hari kerja.
+                            </div>
+                        </div>
+                        <!-- FAQ 4 -->
+                        <div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all">
+                            <button
+                                class="w-full p-space-md lg:p-space-lg flex items-center justify-between text-left gap-space-sm"
+                                onclick="toggleFaq(this)" type="button">
+                                <span class="font-title-md text-title-md text-primary">Apakah kegiatan Teman Seiring
+                                    hanya berpusat di Jakarta Selatan?</span>
+                                <span
+                                    class="material-symbols-outlined text-primary shrink-0 transition-transform duration-200">expand_more</span>
+                            </button>
+                            <div
+                                class="faq-content hidden px-space-md lg:px-space-lg pb-space-lg font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                                Meskipun rumah komunitas fisik kami berada di Jakarta Selatan, kegiatan belajar kami
+                                bersifat hybrid. Kami memiliki program daring berkala, study circle virtual, serta
+                                kegiatan komunitas cabang di Bandung, Yogyakarta, dan Surabaya yang diinisiasi oleh
+                                alumni program.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Bottom Botanical Farewell Banner -->
+            <section class="w-full px-margin-mobile lg:px-margin py-space-xl text-center">
+                <div
+                    class="max-w-[760px] mx-auto p-space-xl rounded-xl bg-gradient-to-b from-surface-container-high to-surface-container-low flex flex-col items-center gap-space-md shadow-sm">
+                    <div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined text-2xl">favorite</span>
+                    </div>
+                    <h3 class="font-headline-md text-headline-md text-primary">Setiap Pertemuan Membuka Ruang Baru untuk
+                        Bertumbuh</h3>
+                    <p class="font-body-md text-body-md text-on-surface-variant">
+                        Jangan biarkan ide atau keraguanmu mengendap. Ketik salam pertamamu hari ini, dan mari kita
+                        rawat bersama benih-benih kebaikan untuk masa depan.
+                    </p>
+                    <a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg bg-primary text-on-primary px-space-xl py-3 rounded-full hover:bg-primary-container transition-all"
+                        href="https://wa.me/6281234567890?text=Halo%20Taman%20Seiring,%20saya%20ingin%20tanya%20seputar%20komunitas"
+                        rel="noopener noreferrer" target="_blank">
+                        <span>Sapa Tim Admin via WhatsApp</span>
+                        <span class="material-symbols-outlined text-base">chat</span>
+                    </a>
+                </div>
+            </section>
+            <!-- Interactive Client-side Script -->
+            <script>
+                function selectPurpose(button, value) {
+                    document.querySelectorAll('#purposeSelector .purpose-pill').forEach(btn => {
+                        btn.classList.remove('bg-primary-container', 'text-on-primary');
+                        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+                    });
+                    button.classList.remove('bg-surface-container', 'text-on-surface-variant');
+                    button.classList.add('bg-primary-container', 'text-on-primary');
+                    const input = document.getElementById('selectedPurpose');
+                    if (input) input.value = value;
+                }
+
+                function setFormPurpose(purposeValue) {
+                    const form = document.getElementById('contactForm');
+                    if (form) {
+                        form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                    const pills = document.querySelectorAll('#purposeSelector .purpose-pill');
+                    pills.forEach(pill => {
+                        if (pill.getAttribute('onclick').includes(purposeValue)) {
+                            selectPurpose(pill, purposeValue);
+                        }
+                    });
+                }
+
+                function toggleFaq(button) {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('.material-symbols-outlined');
+                    const isHidden = content.classList.contains('hidden');
+
+                    // Close all other open items in the accordion
+                    document.querySelectorAll('#faqAccordion .faq-content').forEach(el => el.classList.add('hidden'));
+                    document.querySelectorAll('#faqAccordion .material-symbols-outlined').forEach(i => i.classList.remove('rotate-180'));
+
+                    if (isHidden) {
+                        content.classList.remove('hidden');
+                        if (icon) icon.classList.add('rotate-180');
+                    }
+                }
+
+                function showSuccessToast() {
+                    const toast = document.getElementById('formSuccessToast');
+                    if (toast) {
+                        toast.classList.remove('hidden');
+                        toast.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }
+                }
+            </script>
+        </div>
+    </main>
+    <footer class="w-full bg-primary text-surface-container-lowest">
+        <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl pb-space-xl">
+                <div class="lg:col-span-4 flex flex-col gap-space-md">
+                    <div class="flex items-center gap-space-sm">
+                        <div
+                            class="w-11 h-11 rounded-full overflow-hidden flex items-center justify-center bg-surface-container-lowest shadow-sm ring-2 ring-primary-fixed-dim/30">
+                            <img alt="Teman Seiring Logo" class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlDgDF3UZJEuAkJy1We6L7TsBztJKORIPw6U2Z8QHh0C61rZaGR-LYpGNO7sY8qZ5N2BvV2TaCu1p6JVLyR0RCpzgIrP7O799PhCwFsrPchAtmJcEOO8qh5BkLkAxFLSpIw5VRdbDov9jhN7FVFWtYoAjOtd32B2zRwYVcrykF7flE2SdKFzDwk_WYz5FGy30-QHWkpRge8DL0_ealXDgkTS9fVL7gvU6m1zz9IuUSjpcMbg8oI5cy5ygynQe1ptCzVg" />
+                        </div>
+                        <div class="flex flex-col"><span
+                                class="font-headline-sm text-headline-sm text-surface-bright tracking-tight leading-tight">Taman
+                                Seiring</span><span class="font-label-sm text-label-sm text-primary-fixed-dim">Bertumbuh
+                                Bersama, Berdampak Nyata</span></div>
+                    </div>
+                    <p class="font-body-sm text-body-sm text-surface-dim leading-relaxed">Ruang aman dan positif bagi
+                        anak muda Indonesia untuk saling belajar, bertumbuh, mengasah kepemimpinan, dan mencipta karya
+                        berdampak nyata.</p>
+                    <div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Instagram"
+                            class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed-dim hover:bg-secondary hover:text-on-secondary transition-colors"
+                            href="#"><span class="material-symbols-outlined text-lg">camera_alt</span></a><a
+                            aria-label="TikTok"
+                            class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed-dim hover:bg-secondary hover:text-on-secondary transition-colors"
+                            href="#"><span class="material-symbols-outlined text-lg">play_circle</span></a><a
+                            aria-label="WhatsApp"
+                            class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed-dim hover:bg-secondary hover:text-on-secondary transition-colors"
+                            href="#"><span class="material-symbols-outlined text-lg">chat</span></a><a
+                            aria-label="YouTube"
+                            class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed-dim hover:bg-secondary hover:text-on-secondary transition-colors"
+                            href="#"><span class="material-symbols-outlined text-lg">smart_display</span></a></div>
+                </div>
+                <div class="lg:col-span-2 flex flex-col gap-space-sm"><span
+                        class="font-title-md text-title-md text-surface-bright">Navigasi</span>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-dim">
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="beranda"
+                                href="#">Beranda</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="tentang-kami"
+                                href="#">Tentang Kami</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="program"
+                                href="#">Program</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="kegiatan"
+                                href="#">Kegiatan</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="cerita-kami"
+                                href="#">Cerita Kami</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="kontak"
+                                href="#">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
+                        class="font-title-md text-title-md text-surface-bright">Fokus Komunitas</span>
+                    <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-surface-dim">
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="program"
+                                href="#">Komunikasi &amp; Public Speaking</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="program"
+                                href="#">Self-Leadership &amp; Mindset</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="kegiatan"
+                                href="#">Temu Kolaborasi &amp; Workshop</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="cerita-kami"
+                                href="#">Inspirasi &amp; Jejak Langkah</a></li>
+                        <li class=""><a class="hover:text-primary-fixed-dim transition-colors" data-path="kontak"
+                                href="#">Kemitraan &amp; Kolaborasi Sosial</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
+                        class="font-title-md text-title-md text-surface-bright">Sapa Teman Seiring</span>
+                    <p class="font-body-sm text-body-sm text-surface-dim">Dapatkan kabar kegiatan komunitas, pendaftaran
+                        kelas, dan inspirasi bulanan langsung ke emailmu.</p>
+                    <form class="flex flex-col gap-space-xs mt-space-xs" onsubmit="return false;">
+                        <div class="flex w-full items-center rounded-xl bg-primary-container px-space-sm py-space-xs">
+                            <span
+                                class="material-symbols-outlined text-primary-fixed-dim mr-space-xs text-lg">mail</span><input
+                                class="w-full bg-transparent font-body-sm text-body-sm text-surface-bright placeholder:text-outline-variant focus:outline-none"
+                                placeholder="Tulis email aktifmu..." type="email" /></div><button
+                            class="w-full font-label-md text-label-md bg-secondary text-on-secondary px-space-md py-space-sm rounded-xl hover:bg-secondary-container hover:text-on-secondary-container transition-all flex items-center justify-center gap-space-xs"
+                            type="submit"><span class="">Berlangganan Kabar</span><span
+                                class="material-symbols-outlined text-base">arrow_forward</span></button>
+                    </form>
+                </div>
+            </div>
+            <div
+                class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-primary-fixed-dim">
+                <p class="">© 2026 Teman Seiring. Bertumbuh Bersama, Berdampak Nyata.</p>
+                <div class="flex items-center gap-space-md"><a class="hover:text-surface-bright transition-colors"
+                        href="#">Kebijakan Privasi</a><a class="hover:text-surface-bright transition-colors"
+                        href="#">Panduan Komunitas</a><a class="hover:text-surface-bright transition-colors"
+                        data-path="kontak" href="#">Hubungi Kami</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="navbar.js"></script>
+</body>
+
+</html>

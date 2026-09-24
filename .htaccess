@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Rute bersih tanpa .html
+RewriteRule ^beranda$ index.html [L]
+RewriteRule ^tentang-kami$ about_us.html [L]
+RewriteRule ^program$ program_us.html [L]
+RewriteRule ^kegiatan$ kegiatan_us.html [L]
+RewriteRule ^cerita-kami$ story_us.html [L]
+RewriteRule ^kontak$ contact_us.html [L]

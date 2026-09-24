@@ -197,49 +197,7 @@
 </head>
 
 <body class="bg-background font-body-md text-on-surface antialiased">
-    <header
-        class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(30,48,38,0.06)]">
-        <div class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between"><a
-                class="flex items-center gap-space-sm group" data-path="beranda" href="#">
-                <div
-                    class="w-11 h-11 rounded-full overflow-hidden flex items-center justify-center shadow-sm bg-surface-container-lowest">
-                    <img alt="Taman Seiring Logo" class="w-full h-full object-cover"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlDgDF3UZJEuAkJy1We6L7TsBztJKORIPw6U2Z8QHh0C61rZaGR-LYpGNO7sY8qZ5N2BvV2TaCu1p6JVLyR0RCpzgIrP7O799PhCwFsrPchAtmJcEOO8qh5BkLkAxFLSpIw5VRdbDov9jhN7FVFWtYoAjOtd32B2zRwYVcrykF7flE2SdKFzDwk_WYz5FGy30-QHWkpRge8DL0_ealXDgkTS9fVL7gvU6m1zz9IuUSjpcMbg8oI5cy5ygynQe1ptCzVg">
-                </div>
-                <div class="flex flex-col"><span
-                        class="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight">Taman
-                        Seiring</span><span
-                        class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline-block">Bertumbuh
-                        Bersama, Berdampak Nyata</span></div>
-            </a>
-            <nav class="hidden lg:flex items-center gap-space-md"
-                data-active-classes="text-primary font-bold bg-surface-container rounded-full px-space-md py-space-xs">
-                <a aria-current="page"
-                    class="transition-all text-primary font-bold bg-surface-container rounded-full px-space-md py-space-xs"
-                    data-path="beranda" href="#">Beranda</a><a
-                    class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-space-sm py-space-xs rounded-full transition-all"
-                    data-path="tentang-kami" href="#">Tentang Kami</a><a
-                    class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-space-sm py-space-xs rounded-full transition-all"
-                    data-path="program" href="#">Program</a><a
-                    class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-space-sm py-space-xs rounded-full transition-all"
-                    data-path="kegiatan" href="#">Kegiatan</a><a
-                    class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-space-sm py-space-xs rounded-full transition-all"
-                    data-path="cerita-kami" href="#">Cerita Kami</a><a
-                    class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high px-space-sm py-space-xs rounded-full transition-all"
-                    data-path="kontak" href="#">Kontak</a>
-            </nav>
-            <div class="flex items-center gap-space-sm"><a
-                    class="hidden sm:inline-flex items-center justify-center font-label-lg text-label-lg bg-secondary text-on-secondary px-space-lg py-space-sm rounded-full shadow-[0_2px_8px_rgba(161,62,40,0.25)] hover:bg-secondary-container hover:text-on-secondary-container transition-all"
-                    data-path="gabung-komunitas" href="#">Gabung Bersama Kami</a>
-                <div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile"
-                        class="w-8 h-8 rounded-full object-cover"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlDgDF3UZJEuAkJy1We6L7TsBztJKORIPw6U2Z8QHh0C61rZaGR-LYpGNO7sY8qZ5N2BvV2TaCu1p6JVLyR0RCpzgIrP7O799PhCwFsrPchAtmJcEOO8qh5BkLkAxFLSpIw5VRdbDov9jhN7FVFWtYoAjOtd32B2zRwYVcrykF7flE2SdKFzDwk_WYz5FGy30-QHWkpRge8DL0_ealXDgkTS9fVL7gvU6m1zz9IuUSjpcMbg8oI5cy5ygynQe1ptCzVg"><button
-                        aria-label="Buka Menu Navigasi"
-                        class="lg:hidden p-space-xs text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container-high transition-colors"
-                        type="button"><span class="material-symbols-outlined text-2xl">menu</span></button></div>
-            </div>
-        </div>
-    </header>
+    <div data-navbar></div>
     <main class="w-full pt-20 bg-background min-h-screen">
         <div class="flex flex-col w-full">
             <!-- HERO SECTION -->
@@ -271,14 +229,14 @@
                         </h1>
                         <!-- Subheadline -->
                         <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
-                            Taman Seiring adalah ruang bagi anak muda untuk belajar, berkembang, menemukan keberanian,
+                            Teman Seiring adalah ruang bagi anak muda untuk belajar, berkembang, menemukan keberanian,
                             membangun relasi positif, dan menciptakan dampak nyata bersama.
                         </p>
                         <!-- CTAs & Trust Badges -->
                         <div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
                             <a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs font-label-lg text-label-lg bg-secondary text-on-secondary px-space-xl py-space-md rounded-full shadow-lg shadow-secondary/25 hover:bg-secondary-container hover:text-on-secondary-container hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
                                 href="#gabung">
-                                <span class="">Gabung Taman Seiring</span>
+                                <span class="">Gabung Teman Seiring</span>
                                 <span class="material-symbols-outlined text-lg">arrow_forward</span>
                             </a>
                             <a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs font-label-lg text-label-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest px-space-lg py-space-md rounded-full shadow-sm transition-all duration-200"
@@ -331,7 +289,7 @@
                             <!-- Main Hero Image Frame -->
                             <div
                                 class="relative rounded-3xl overflow-hidden shadow-2xl bg-surface-container-high aspect-[4/3] lg:aspect-[5/4]">
-                                <img alt="Anak muda Taman Seiring berdiskusi santai di greenhouse kafe yang hangat dan asri"
+                                <img alt="Anak muda Teman Seiring berdiskusi santai di greenhouse kafe yang hangat dan asri"
                                     class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 ease-out"
                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKoYSqJNZ-dOSIEdCgUIFsYowdSocJ1ZXhnzcFtN0tbK0t2jffPjUYXrfwD2HpFUR7LyBQ30S90d_aMzZpIXQRhEtGqKb24pUmVuenLmjXid10TTQl3g49OyeKBWQOfLV5tynxBCN2fc8Or6a1hxcCj8a4h8BvI30ddRBMgcXh1uGFtZDgmJQ7iVVzH3OWpd7ZI2obAWEd9V2WXlFXEc-tFXArTRLaAwWhD_TS95Im3ekYhd0Y6YFp">
                                 <div
@@ -438,7 +396,7 @@
                     </div>
                 </div>
             </section>
-            <!-- TENTANG TAMAN SEIRING -->
+            <!-- TENTANG Teman Seiring -->
             <section class="w-full py-space-xl lg:py-32 px-margin-mobile lg:px-margin bg-surface" id="tentang-kami">
                 <div class="max-w-[1280px] mx-auto">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
@@ -477,7 +435,7 @@
                                 Karena Bertumbuh Lebih Seru Jika Tidak Sendirian.
                             </h2>
                             <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-                                Taman Seiring hadir sebagai ruang aman dan positif bagi anak muda untuk mengenal potensi
+                                Teman Seiring hadir sebagai ruang aman dan positif bagi anak muda untuk mengenal potensi
                                 dirinya, belajar berkomunikasi, membangun keberanian, dan tumbuh bersama orang-orang
                                 yang saling mendukung.
                             </p>
@@ -553,7 +511,7 @@
                                 <h3
                                     class="font-title-md text-title-md text-on-surface font-bold flex items-center gap-space-xs">
                                     <span class="material-symbols-outlined text-secondary text-2xl">checklist</span>
-                                    <span class="">5 Misi Nyata Taman Seiring</span>
+                                    <span class="">5 Misi Nyata Teman Seiring</span>
                                 </h3>
                                 <span class="font-label-sm text-label-sm text-on-surface-variant">Langkah terukur &amp;
                                     konsisten</span>
@@ -926,7 +884,7 @@
                         <div class="gallery-item group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 aspect-[4/3] bg-surface-container-high cursor-pointer"
                             data-category="workshop"
                             onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuA7YS-isiKPVH9aESMCYTwg-oNkKFLpehYqtQ3Kpo1rzrQ-eURxJNfYGVVdDdWq2-qn2qopKtrZ7ziUgBFEfXbXOGky76arzsOS0hQ1PROAWn3VETpfglhURWL4yoHkfIF6U0QGkkCwks06EVpQv6WOIFtuPFSWPQA4UHhSvQkjYgrAFzuaJoi5ZY4jnMe_HemCdii_xCopvsJUzPnXjOXD-YwIamRXX9yC9fn1rhOsuA0Porkepieb', 'Workshop Public Speaking: Find Your Voice', 'Sesi intensif melatih ekspresi dan artikulasi pesan bersama teman sebaya tanpa rasa takut.')">
-                            <img alt="Workshop Public Speaking Find Your Voice di Taman Seiring"
+                            <img alt="Workshop Public Speaking Find Your Voice di Teman Seiring"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7YS-isiKPVH9aESMCYTwg-oNkKFLpehYqtQ3Kpo1rzrQ-eURxJNfYGVVdDdWq2-qn2qopKtrZ7ziUgBFEfXbXOGky76arzsOS0hQ1PROAWn3VETpfglhURWL4yoHkfIF6U0QGkkCwks06EVpQv6WOIFtuPFSWPQA4UHhSvQkjYgrAFzuaJoi5ZY4jnMe_HemCdii_xCopvsJUzPnXjOXD-YwIamRXX9yC9fn1rhOsuA0Porkepieb">
                             <div
@@ -944,7 +902,7 @@
                         <div class="gallery-item group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 aspect-[4/3] bg-surface-container-high cursor-pointer"
                             data-category="gathering"
                             onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuCKoYSqJNZ-dOSIEdCgUIFsYowdSocJ1ZXhnzcFtN0tbK0t2jffPjUYXrfwD2HpFUR7LyBQ30S90d_aMzZpIXQRhEtGqKb24pUmVuenLmjXid10TTQl3g49OyeKBWQOfLV5tynxBCN2fc8Or6a1hxcCj8a4h8BvI30ddRBMgcXh1uGFtZDgmJQ7iVVzH3OWpd7ZI2obAWEd9V2WXlFXEc-tFXArTRLaAwWhD_TS95Im3ekYhd0Y6YFp', 'Greenhouse Deep Talk &amp; Connection', 'Obrolan bermakna di kafe asri yang membuka ruang hati untuk saling mendengar dan bertukar pandangan hidup.')">
-                            <img alt="Greenhouse Gathering and Deep Talk Taman Seiring"
+                            <img alt="Greenhouse Gathering and Deep Talk Teman Seiring"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKoYSqJNZ-dOSIEdCgUIFsYowdSocJ1ZXhnzcFtN0tbK0t2jffPjUYXrfwD2HpFUR7LyBQ30S90d_aMzZpIXQRhEtGqKb24pUmVuenLmjXid10TTQl3g49OyeKBWQOfLV5tynxBCN2fc8Or6a1hxcCj8a4h8BvI30ddRBMgcXh1uGFtZDgmJQ7iVVzH3OWpd7ZI2obAWEd9V2WXlFXEc-tFXArTRLaAwWhD_TS95Im3ekYhd0Y6YFp">
                             <div
@@ -961,7 +919,7 @@
                         <!-- Item 3: Social Project -->
                         <div class="gallery-item group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 aspect-[4/3] bg-surface-container-high cursor-pointer"
                             data-category="social"
-                            onclick="openLightbox('placeholder', 'Aksi Sebar Literasi &amp; Taman Baca', 'Relawan anak muda Taman Seiring menata rak buku dan mendongeng bersama anak-anak di pinggir kota.')">
+                            onclick="openLightbox('placeholder', 'Aksi Sebar Literasi &amp; Taman Baca', 'Relawan anak muda Teman Seiring menata rak buku dan mendongeng bersama anak-anak di pinggir kota.')">
                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 data-alt="A vibrant photo of Indonesian youth volunteers sitting on the floor with underprivileged children in an urban community library, reading colorful books together with joy and laughter, warm sunlight streaming through open wooden windows, indoor plants in terracotta pots around them, natural warm cream and botanical green aesthetics"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIED_ia8Sese5OAurmq20UeSXp5In0YLLSCWLUg99UEKQfpNXo0heJt1sC4zcGLOdgE6q_ZeUTgatSmJnIX6YGDEId8l9dxKcf7Jg7Viby7f5O3b5vF5uxGXNEy6Qe9K_N5bN8XX0A83GPx1j5nGjS4nR5kS6iyDKF__TXuQNxOkf3sA7_od-DuGX5QaZKwWtIkjpAMFdetX1B4eCR8qe06NsufspMhpTQJR7pZscCn-cldL1o1nJw">
@@ -1053,7 +1011,7 @@
                     </div>
                 </div>
             </div>
-            <!-- NILAI-NILAI TAMAN SEIRING -->
+            <!-- NILAI-NILAI Teman Seiring -->
             <section class="w-full py-space-xl lg:py-32 px-margin-mobile lg:px-margin bg-surface">
                 <div class="max-w-[1280px] mx-auto flex flex-col gap-space-xl">
                     <div class="text-center max-w-xl mx-auto flex flex-col gap-space-xs">
@@ -1136,7 +1094,7 @@
                         <span class="font-label-md text-label-md uppercase tracking-wider text-primary">Cerita
                             Sahabat</span>
                         <h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-on-surface">Kata
-                            Mereka Tentang Taman Seiring</h2>
+                            Mereka Tentang Teman Seiring</h2>
                         <p class="font-body-md text-body-md text-on-surface-variant">Kisah nyata dari kawan-kawan yang
                             telah berani mengambil langkah pertama.</p>
                     </div>
@@ -1171,7 +1129,7 @@
                                 <span class="material-symbols-outlined text-primary text-4xl">format_quote</span>
                                 <p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
                                     “Menemukan circle pertemanan yang positif dan saling dukung itu langka banget. Di
-                                    Taman Seiring, gue menemukan rumah kedua untuk bertumbuh.”
+                                    Teman Seiring, gue menemukan rumah kedua untuk bertumbuh.”
                                 </p>
                             </div>
                             <div class="flex items-center gap-space-sm pt-space-xs">
@@ -1193,7 +1151,7 @@
                                 <span class="material-symbols-outlined text-tertiary text-4xl">format_quote</span>
                                 <p class="font-body-md text-body-md text-on-surface leading-relaxed italic">
                                     “Dari yang awalnya gugup ngomong depan dua orang, sekarang berani pimpin diskusi tim
-                                    kerja. Terima kasih mentor dan teman-teman Taman Seiring!”
+                                    kerja. Terima kasih mentor dan teman-teman Teman Seiring!”
                                 </p>
                             </div>
                             <div class="flex items-center gap-space-sm pt-space-xs">
@@ -1235,7 +1193,7 @@
                             </h2>
                             <p class="font-body-lg text-body-lg text-surface-dim leading-relaxed">
                                 Tidak harus sudah percaya diri untuk bergabung. Datang, belajar, temukan keberanianmu,
-                                dan tumbuh bersama di Taman Seiring.
+                                dan tumbuh bersama di Teman Seiring.
                             </p>
                             <!-- Buttons -->
                             <div
@@ -1338,7 +1296,7 @@
                     <div class="flex items-center gap-space-sm">
                         <div
                             class="w-11 h-11 rounded-full overflow-hidden flex items-center justify-center bg-surface-container-lowest shadow-sm">
-                            <img alt="Taman Seiring Logo" class="w-full h-full object-cover"
+                            <img alt="Teman Seiring Logo" class="w-full h-full object-cover"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCz14iFm1uyqdkWw2Bw4YbQUcmpJvQG6-OIfTeTPvsXTj1giDAzZ8oCsg7wMDtthbpYK9HNMzpygfKr5YtvxaefOhtQZzm0GhAQx477aIi3oEBCC5VkKY12DSLocRY3TL5Nz6ojwd--PbKbbAW6199mVtlS-SsOmZI1RSv-piwFQ0BHdQ-XlTe8nllr4qDvzdBmhLdyIgGcSZDZ9bIzV9Z63-Uy0DLahA5hYnzKz_so-0GP66AGwMtzRTPmiV-683qbA">
                         </div>
                         <div class="flex flex-col"><span
@@ -1395,7 +1353,7 @@
                     </ul>
                 </div>
                 <div class="lg:col-span-3 flex flex-col gap-space-sm"><span
-                        class="font-title-md text-title-md text-surface-bright">Sapa Taman Seiring</span>
+                        class="font-title-md text-title-md text-surface-bright">Sapa Teman Seiring</span>
                     <p class="font-body-sm text-body-sm text-surface-dim">Dapatkan kabar kegiatan komunitas, panduan
                         belajar, dan inspirasi bulanan langsung ke emailmu.</p>
                     <form class="flex flex-col gap-space-xs mt-space-xs" onsubmit="return false;">
@@ -1413,13 +1371,14 @@
             </div>
             <div
                 class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-primary-fixed-dim">
-                <p class="">© 2026 Taman Seiring. All rights reserved. Made with heart for Indonesia's youth.</p>
+                <p class="">© 2026 Teman Seiring. All rights reserved. Made with heart for Indonesia's youth.</p>
                 <div class="flex items-center gap-space-md"><a class="hover:text-surface-bright transition-colors"
                         href="#">Kebijakan Privasi</a><a class="hover:text-surface-bright transition-colors"
                         href="#">Panduan Komunitas</a></div>
             </div>
         </div>
     </footer>
+    <script src="navbar.js"></script>
 
 </body>
 

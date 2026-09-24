@@ -9,5 +9,13 @@
                 }
             ]
         }
+    ],
+    "rewrites": [
+        { "source": "/beranda", "destination": "/index.html" },
+        { "source": "/tentang-kami", "destination": "/about_us.html" },
+        { "source": "/program", "destination": "/program_us.html" },
+        { "source": "/kegiatan", "destination": "/kegiatan_us.html" },
+        { "source": "/cerita-kami", "destination": "/story_us.html" },
+        { "source": "/kontak", "destination": "/contact_us.html" }
     ]
 }
