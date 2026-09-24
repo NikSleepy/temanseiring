@@ -120,7 +120,7 @@
                             </div>
                         </div>
                         <form class="flex flex-col gap-space-md" id="contactForm"
-                            onsubmit="event.preventDefault(); showSuccessToast();">
+                            action="https://formspree.io/f/meaokblp" method="POST">
                             <!-- Field 1: Full Name -->
                             <div class="flex flex-col gap-space-xs">
                                 <label class="font-label-lg text-label-lg text-primary" for="fullName">Nama Lengkap atau
@@ -130,7 +130,7 @@
                                         class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-lg">badge</span>
                                     <input
                                         class="w-full pl-11 pr-space-md py-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all font-body-md text-body-md"
-                                        id="fullName" placeholder="Contoh: Rian Pratama" required="" type="text" />
+                                        id="fullName" name="fullName" placeholder="Contoh: Rian Pratama" required="" type="text" />
                                 </div>
                             </div>
                             <!-- Field 2 & 3: Email & WhatsApp (Grid on sm+) -->
@@ -143,7 +143,7 @@
                                             class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-lg">alternate_email</span>
                                         <input
                                             class="w-full pl-11 pr-space-md py-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all font-body-md text-body-md"
-                                            id="email" placeholder="kamu@email.com" required="" type="email" />
+                                            id="email" name="email" placeholder="kamu@email.com" required="" type="email" />
                                     </div>
                                 </div>
                                 <div class="flex flex-col gap-space-xs">
@@ -154,7 +154,7 @@
                                             class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-lg">call</span>
                                         <input
                                             class="w-full pl-11 pr-space-md py-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all font-body-md text-body-md"
-                                            id="whatsapp" placeholder="0812-xxxx-xxxx" required="" type="tel" />
+                                            id="whatsapp" name="whatsapp" placeholder="0812-xxxx-xxxx" required="" type="tel" />
                                     </div>
                                 </div>
                             </div>
@@ -202,6 +202,7 @@
                                 <textarea
                                     class="w-full p-space-md rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all font-body-md text-body-md resize-none"
                                     id="message"
+                                    name="message"
                                     placeholder="Ceritakan ketertarikanmu, ide kegiatan, atau pertanyaan apa saja yang ingin diobrolkan..."
                                     required="" rows="4"></textarea>
                             </div>
@@ -237,7 +238,7 @@
                     <div class="lg:col-span-5 flex flex-col gap-space-md">
                         <!-- Quick WhatsApp Card -->
                         <a class="group flex items-start justify-between p-space-lg rounded-xl bg-surface-container-high hover:bg-surface-container-highest transition-all shadow-sm"
-                            href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+                            href="https://wa.me/628986969322" rel="noopener noreferrer" target="_blank">
                             <div class="flex items-start gap-space-md">
                                 <div
                                     class="w-12 h-12 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center shrink-0">
@@ -251,9 +252,9 @@
                                         class="font-title-md text-title-md text-primary group-hover:text-secondary transition-colors">Direct
                                         WhatsApp</span>
                                     <span class="font-body-md text-body-md text-on-surface font-semibold pt-0.5">+62
-                                        812-3456-7890</span>
+                                        898-6969-322</span>
                                     <span class="font-body-sm text-body-sm text-on-surface-variant pt-1">Admin ramah
-                                        siap menyapa: Kak Maya &amp; Mas Danu (09.00 - 20.00 WIB)</span>
+                                        siap menyapa: Kak Ocha &amp; Mas Anif (09.00 - 20.00 WIB)</span>
                                 </div>
                             </div>
                             <span
@@ -657,7 +658,7 @@
                         rawat bersama benih-benih kebaikan untuk masa depan.
                     </p>
                     <a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg bg-primary text-on-primary px-space-xl py-3 rounded-full hover:bg-primary-container transition-all"
-                        href="https://wa.me/6281234567890?text=Halo%20Taman%20Seiring,%20saya%20ingin%20tanya%20seputar%20komunitas"
+                        href="https://wa.me/628986969322?text=Halo%20Taman%20Seiring,%20saya%20ingin%20tanya%20seputar%20komunitas"
                         rel="noopener noreferrer" target="_blank">
                         <span>Sapa Tim Admin via WhatsApp</span>
                         <span class="material-symbols-outlined text-base">chat</span>
@@ -695,7 +696,6 @@
                     const icon = button.querySelector('.material-symbols-outlined');
                     const isHidden = content.classList.contains('hidden');
 
-                    // Close all other open items in the accordion
                     document.querySelectorAll('#faqAccordion .faq-content').forEach(el => el.classList.add('hidden'));
                     document.querySelectorAll('#faqAccordion .material-symbols-outlined').forEach(i => i.classList.remove('rotate-180'));
 
@@ -712,6 +712,56 @@
                         toast.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                     }
                 }
+
+                // === Submit form ke Formspree pakai fetch ===
+                document.getElementById('contactForm').addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+                    const form = event.target;
+                    const submitBtn = form.querySelector('button[type="submit"]');
+                    const originalBtnHtml = submitBtn.innerHTML;
+
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = '<span>Mengirim...</span>';
+
+                    const formData = new FormData(form);
+
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: { 'Accept': 'application/json' }
+                    })
+                        .then(response => {
+                            if (response.ok) {
+                                showSuccessToast();
+                                form.reset();
+                                // reset pill purpose ke default lagi
+                                document.querySelectorAll('#purposeSelector .purpose-pill').forEach(btn => {
+                                    btn.classList.remove('bg-primary-container', 'text-on-primary');
+                                    btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+                                });
+                                const firstPill = document.querySelector('#purposeSelector .purpose-pill');
+                                if (firstPill) {
+                                    firstPill.classList.remove('bg-surface-container', 'text-on-surface-variant');
+                                    firstPill.classList.add('bg-primary-container', 'text-on-primary');
+                                }
+                                document.getElementById('selectedPurpose').value = 'member';
+                            } else {
+                                response.json().then(data => {
+                                    alert('Gagal mengirim pesan. Silakan coba lagi atau hubungi kami langsung.');
+                                    console.error('Formspree error:', data);
+                                });
+                            }
+                        })
+                        .catch(error => {
+                            alert('Gagal mengirim pesan. Periksa koneksi internet Anda.');
+                            console.error('Network error:', error);
+                        })
+                        .finally(() => {
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = originalBtnHtml;
+                        });
+                });
             </script>
         </div>
     </main>
