@@ -964,19 +964,19 @@
                         Mohon isi detail singkat di bawah agar fasilitator dapat menyiapkan tempat duduk &amp; materi
                         terbaik untukmu.
                     </p>
-                    <form class="mt-space-md space-y-space-sm" onsubmit="handleRegistrationSubmit(event)">
+                    <form class="mt-space-md space-y-space-sm" onsubmit="handleRegistrationSubmit(event)" action="https://formspree.io/f/xoevlydd" method="POST">
                         <div>
                             <label class="block font-label-md text-label-md text-primary mb-1">Nama Lengkap</label>
                             <input
                                 class="w-full px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20"
-                                placeholder="Nama lengkapmu" required="" type="text" />
+                                placeholder="Nama lengkapmu" name="Nama_Lengkap" required="" type="text" />
                         </div>
                         <div>
                             <label class="block font-label-md text-label-md text-primary mb-1">Nomor WhatsApp
                                 Aktif</label>
                             <input
                                 class="w-full px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20"
-                                placeholder="08xxxxxxxxxx (untuk reminder lokasi)" required="" type="tel" />
+                                placeholder="08xxxxxxxxxx (untuk reminder lokasi)" name="Wa" required="" type="tel" />
                         </div>
                         <div>
                             <label class="block font-label-md text-label-md text-primary mb-1">Pilihan Format
@@ -1117,8 +1117,41 @@
 
             function handleRegistrationSubmit(e) {
                 e.preventDefault();
-                closeEventModal();
-                showToast('🎉 Registrasi berhasil! Cek WhatsApp-mu untuk tiket digital.');
+                const form = e.target;
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalBtnHtml = submitBtn.innerHTML;
+
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span>Mengirim...</span>';
+
+                const formData = new FormData(form);
+
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            form.reset();
+                            closeEventModal();
+                            showToast('🎉 Registrasi berhasil! Cek WhatsApp-mu untuk tiket digital.');
+                        } else {
+                            response.json().then(data => {
+                                alert('Gagal mengirim pesan. Silakan coba lagi atau hubungi kami langsung.');
+                                console.error('Formspree error:', data);
+                            });
+                        }
+                    })
+                    .catch(error => {
+                        alert('Gagal mengirim pesan. Periksa koneksi internet Anda.');
+                        console.error('Network error:', error);
+                    })
+                    .finally(() => {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalBtnHtml;
+                    });
+                
             }
 
             // Suggestion Proposal Handler
